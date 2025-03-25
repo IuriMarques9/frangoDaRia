@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Frango da Ria</title>
+
+  <!-- Link para o Tailwind CSS via CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+  <!-- Meta description para SEO -->
+  <meta name="description" content="Bem-vindo ao Frango da Ria. Descubra nosso o frango que conquista.">
+  
+  <link rel="icon" href="assets/icon.png" type="image/x-icon">
+
+</head>
+<body class="bg-gray-100 text-gray-900 min-w-[250px]">
+   
+    <!-- Cabeçalho -->
+    <header class="bg-[#FCCE35] shadow">
+        <div class="p-5">
+            <a href="index.html" class="w-fit block mx-auto">
+                <img src="assets/logo-frango-sem-fundo.png" alt="Logo" class="max-w-48 w-full">
+            </a>
+
+            <nav class="mt-4 w-full p-1">
+                <ul class="flex justify-center space-x-4">
+                <li class="underline text-white font-semibold decoration-3 decoration-[#F47D1B] hover:cursor-default">Início</li>
+                <li><a href="galeria.html" class="text-white font-semibold decoration-3 decoration-[#F47D1B] hover:underline">Galeria</a></li>
+                <li><a href="menu.html" class="text-white font-semibold decoration-3 decoration-[#F47D1B] hover:underline">Menu</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!-- Fim Cabeçalho -->
+
+
+  <!-- Conteúdo Principal -->
+  <main class="container mx-auto px-4 py-6">
+    <!-- Seção de Boas-Vindas -->
+    <section class="text-center">
+      <h2 class="text-2xl font-semibold">Bem-vindo ao Nome do Restaurante</h2>
+      <p class="mt-4">Desfrute da melhor experiência gastronômica com nossos pratos exclusivos.</p>
+    </section>
+
+    <!-- Seção de Destaques -->
+    <section class="mt-8">
+      <h3 class="text-xl font-semibold">Destaques do Menu</h3>
+      <div class="mt-4 grid grid-cols-1 md:grid-cols-3 gap-6">
+        <!-- Exemplo de Prato -->
+        <div class="bg-white p-4 rounded-lg shadow">
+          <img src="caminho/para/imagem1.jpg" alt="Nome do Prato" class="w-full h-48 object-cover rounded">
+          <h4 class="mt-2 font-semibold">Nome do Prato</h4>
+          <p class="text-gray-600">Descrição breve do prato.</p>
+        </div>
+        <!-- Repetir para outros pratos -->
+      </div>
+    </section>
+  </main>
+
+  <!-- Rodapé -->
+  <footer class="bg-[#FCCE35] shadow px-10">
+    <h2>Envie-nos email</h2>
+
+    <form action="mailto:iurimarcianom70@gmail.com" class="flex flex-col" enctype="text/plain">
+        <label for="nome">Nome</label>
+        <input type="text" name="nome">
+        
+        <label for="email">Email</label>
+        <input type="email" name="email">
+
+        <label for="mensagem">Mensagem</label>
+        <textarea rows="3" name="mensagem"></textarea>
+
+        <label for="privacidade">Concordo com a Politica de Privacidade</label>
+        <input type="radio" name="privacidade">
+
+        <input type="submit" value="Enviar">
+    </form>
+
+    <div class="text-white container mx-auto text-center border-t-3 py-3">
+      <p>&copy; 2025 Todos os direitos reservados a Restaurante Frango da Ria - Fornecido por RedDune Solutions</p>
+    </div>
+  </footer>
+</body>
+</html>
