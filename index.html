@@ -12,6 +12,7 @@
   <!-- Meta description para SEO -->
   <meta name="description" content="Bem-vindo ao Frango da Ria. Descubra nosso o frango que conquista.">
   
+  <link rel="stylesheet" href="style.css">
   <link rel="icon" href="assets/icon.png" type="image/x-icon">
 
 </head>
@@ -60,27 +61,56 @@
   </main>
 
   <!-- Rodapé -->
-  <footer class="bg-[#FCCE35] shadow px-10">
-    <h2>Envie-nos email</h2>
-
-    <form action="mailto:iurimarcianom70@gmail.com" class="flex flex-col" enctype="text/plain">
-        <label for="nome">Nome</label>
-        <input type="text" name="nome">
+  <footer class="text-white bg-[#FCCE35] shadow px-10">
+      
+    <form action="mailto:iurimarcianom70@gmail.com" class="text-white flex flex-col py-5 gap-2" enctype="text/plain">
+        <h2>Envie-nos email</h2>
         
-        <label for="email">Email</label>
-        <input type="email" name="email">
+        <div class="flex flex-col gap-1">
+            <label for="nome">Nome</label>
+            <input placeholder="Primeiro Nome" type="text" name="nome">
+        </div>
+        
+        <div class="flex flex-col gap-1">
+            <label for="email">Email</label>
+            <input placeholder="exemplo@exemplo.com" type="email" name="email">
+        </div>
 
-        <label for="mensagem">Mensagem</label>
-        <textarea rows="3" name="mensagem"></textarea>
+        <div class="flex flex-col gap-1">
+            <label for="mensagem">Mensagem</label>
+            <textarea placeholder="Escreve aqui a tua mensagem" rows="3" name="mensagem"></textarea>
+        </div>
 
-        <label for="privacidade">Concordo com a Politica de Privacidade</label>
-        <input type="radio" name="privacidade">
+        <div class="flex gap-2">
+            <input type="checkbox" name="privacidade" class="">
+            <label for="privacidade" class="">Concordo com a <a href="" class="underline">Politica de Privacidade</a></label>
+        </div>
 
         <input type="submit" value="Enviar">
     </form>
 
-    <div class="text-white container mx-auto text-center border-t-3 py-3">
-      <p>&copy; 2025 Todos os direitos reservados a Restaurante Frango da Ria - Fornecido por RedDune Solutions</p>
+    <hr class="text-white border-t-2">
+
+    <div class="py-5 text-white flex flex-col gap-4 items-center text-center">
+        <h5>Telemovel: 96999999</h5>
+
+        <h5>Email: frangodaria@hotmail.com</h5>
+
+        <h5>Para mais informações contacte-nos atraves do numero de telefone, envie-nos um email ou contacte-nos pelo formulario acima.</h5>
+
+        <img src="facebook" alt="Facebook icon">
+    </div>
+
+    <hr class="text-white border-t-2">
+
+    <div class="flex justify-center py-5">
+        <a href="" class="w-fit block hover:underline">
+            <h6>Politica de Privacidade</h6>
+        </a>
+    </div>
+
+    <div class="text-white mx-auto text-center border-t-2 py-3">
+      <p>&copy; 2025 Todos os direitos reservados a Restaurante Frango da Ria - Fornecido por <a href="" class="underline hover:text-red-600">RedDune Solutions</a></p>
     </div>
   </footer>
 </body>
