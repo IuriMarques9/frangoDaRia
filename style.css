@@ -3,13 +3,20 @@ h1{
     color: white;
     font-weight: bold;
 }
-p{
-    color: white;
-}
 
 h2{
-    font-size: 35px;
+    font-size: 34px;
+    font-weight: 600;
+}
+
+h3{
+    font-size: 30px;
     font-weight: 700;
+
+}
+
+h4{
+    font-size: 26px;
 }
 
 h5{
@@ -20,6 +27,13 @@ h5{
 label{
     font-size: 11px;
     font-weight: 600;
+}
+
+p{
+    color: white;
+}
+section{
+    padding: 50px 30px;
 }
 
 
