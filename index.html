@@ -38,7 +38,7 @@
 
 
   <!-- Conteúdo Principal -->
-  <main class="">
+  <main>
     <!-- Hero -->
     <section class="bg-[url(assets/hero.png)] bg-center bg-cover bg-no-repeat float-right">
         <div class="bg-black/20 p-6 flex flex-col gap-4 text-center">
@@ -48,7 +48,7 @@
     </section>
 
     <!-- Seção de Destaques -->
-    <section class="mt-8">
+    <section>
       <h3 class="text-xl font-semibold">Destaques do Menu</h3>
       <div class="mt-4 grid grid-cols-1 md:grid-cols-3 gap-6">
         <!-- Exemplo de Prato -->
@@ -83,15 +83,19 @@
             <textarea placeholder="Escreve aqui a tua mensagem" rows="3" name="mensagem" required></textarea>
         </div>
 
-        <label class="container" class=""> <!-- Input CheckBox -->
-            Concordo com a <a href="" class="underline hover:text-[#99B1B5]">Politica de Privacidade</a>
-            
-            <input type="checkbox" class="h-fit" name="politica" required>
-            <span class="checkmark"></span>
-        </label>
+        <div>
+            <label class="container"> <!-- Input CheckBox -->                
+                <input type="checkbox" class="h-fit" name="politica" required>
+                <span class="checkmark"></span>
+                Concordo com a
+            </label>
+            <a href="" class="font-[600] text-[12px] underline hover:text-[#99B1B5]">Politica de Privacidade</a>
+        </div>
 
         <button type="submit" value="Enviar" class="py-2 cursor-pointer hover:!border-[#99B1B5] font-semibold">Enviar</button> <!-- Submit Button -->
 
+        <input type="hidden" name="_next" value="https://yourdomain.com/email.html"> <!-- Redirect page -->
+        <input type="hidden" name="_template" value="table"> <!-- Email Template-->
         <input type="hidden" name="_captcha" value="false"> <!-- ReCaptcha Remove -->
     </form>
 
@@ -105,7 +109,7 @@
         <h5>Para mais informações contacte-nos atraves do numero de telefone, envie-nos um email ou contacte-nos pelo formulario acima.</h5>
 
         <a href="https://www.facebook.com/profile.php?id=100054500947865">
-            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"><path fill="#fff" d="M17 1H3c-1.1 0-2 .9-2 2v14c0 1.101.9 2 2 2h7v-7H8V9.525h2v-2.05c0-2.164 1.212-3.684 3.766-3.684l1.803.002v2.605h-1.197c-.994 0-1.372.746-1.372 1.438v1.69h2.568L15 12h-2v7h4c1.1 0 2-.899 2-2V3c0-1.1-.9-2-2-2"/></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"><path class="hover:fill-[#1877F2]" fill="#fff" d="M17 1H3c-1.1 0-2 .9-2 2v14c0 1.101.9 2 2 2h7v-7H8V9.525h2v-2.05c0-2.164 1.212-3.684 3.766-3.684l1.803.002v2.605h-1.197c-.994 0-1.372.746-1.372 1.438v1.69h2.568L15 12h-2v7h4c1.1 0 2-.899 2-2V3c0-1.1-.9-2-2-2"/></svg>
         </a>
           
     </div>

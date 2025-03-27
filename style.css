@@ -25,12 +25,13 @@ h5{
 }
 
 label{
-    font-size: 11px;
+    font-size: 12px;
     font-weight: 600;
 }
 
 p{
     color: white;
+    text-align: justify;
 }
 section{
     padding: 50px 30px;
@@ -95,6 +96,7 @@ input:focus, textarea:focus{
   /* On mouse-over, add a grey background color */
   .container:hover input ~ .checkmark {
     background-color: rgba(255, 255, 255, 0.2);
+    border-color: #99B1B5;
   }
   
   /* When the checkbox is checked, add a blue background */
