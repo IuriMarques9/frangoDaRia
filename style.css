@@ -1,5 +1,5 @@
 h1{
-    font-size: 45px;
+    font-size: 38px;
     color: white;
     font-weight: bold;
 }
@@ -10,13 +10,15 @@ h2{
 }
 
 h3{
-    font-size: 30px;
+    font-size: 28px;
     font-weight: 700;
     color: #F47D1B;
 }
 
 h4{
     font-size: 26px;
+    font-weight: 700;
+
 }
 
 h5{
@@ -30,6 +32,7 @@ label{
 }
 
 p{
+    font-size: 15px;
     color: white;
     text-align: justify;
 }
