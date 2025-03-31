@@ -16,11 +16,11 @@
   <link rel="icon" href="assets/icon.png" type="image/x-icon">
 
 </head>
-<body class="bg-gray-100 text-gray-900 min-w-[300px]">
+<body class="bg-gray-100 text-gray-900 min-w-[300px] ">
     
     <!-- Cabeçalho -->
-    <header class="z-10 fixed bg-[#FCCE35] shadow top-0 w-full z-40">
-        <div class="p-5 flex flex-col gap-3 md:flex-row md:jusitfy-between">
+    <header class="z-10 fixed bg-[#FCCE35] shadow top-0 w-full z-40 ">
+        <div class="p-5 flex flex-col gap-3 md:flex-row md:jusitfy-between max-w-[1280px] mx-auto">
             <a href="index.html" class="w-fit block mx-auto">
                 <img src="assets/logo-frango-sem-fundo.png" alt="Logo" class="max-w-48 w-full">
             </a>
@@ -39,137 +39,140 @@
     <!-- Hero -->
     <section class="w-full fixed left-[50%] h-screen -translate-x-[50%]">
         <div class="flex items-center bg-[url(assets/hero.png)] bg-center bg-fixed bg-no-repeat bg-cover w-full h-[110vh]">
-
-            <div class="bg-black/20 p-10 flex flex-col gap-8 text-center mx-auto w-10/12 h-fit">
+            
+            <div class="bg-black/20 p-10 flex flex-col gap-8 text-center mx-auto w-10/12 h-fit max-w-[1280px] mx-auto">
                 <h1 class="">Frango da Ria</h1>
                 <p class="text-white">Sorria!! Esta no Frango da Ria. Onde o frango esta no ponto e os sabores conquistam.</p>
             </div>
         </div>
     </section>
-
+    
     <!-- Conteúdo Principal -->
     <main>
         <div class="h-[100vh]"></div> <!--Container de altura para o hero-->
         <!--Conteudo-->
-        <section class="z-99 flex flex-col gap-12 bg-white w-full rounded-t-[100px] sticky text-center p-10">
-            <!--Sobre Nós-->
-            <h3 class="font-semibold">Sobre Nós</h3>
-            <p class="!text-black">Lorem ipsum dolor sit amet consectetur adipisicing elit. A velit labore, harum blanditiis, consectetur rem, architecto explicabo distinctio voluptates accusamus vero quo quas adipisci corporis nemo vel doloremque sunt veniam ad! Consectetur eveniet dolorem maiores totam error, praesentium tempora assumenda. Quam nam quaerat dicta ex recusandae quos, dignissimos beatae placeat?</p>
-        
-            <div class="divisor"></div> <!--Divisão de conteúdo-->
-
-            
-            <!--Pratos populares-->
-            <h3>Pratos Populares</h3>
-            <div class="flex flex-col gap-12 md:flex-row">
-                <div class="flex flex-col gap-8 items-center">
-                    <img class="w-full h-fit rounded-full max-w-48" src="assets/frango.jpg" alt="Prato1">
-
-                    <h4>Frango Grelhado</h4>
-                    
-                    <p>A nossa casa é afamada pelo extraordinário frango assado ao dispor, suculento e cheio de sabor, quem prova nunca se desaponta</p>
-                </div>
-
-                <div class="flex flex-col gap-8 items-center">
-                    <img class="w-full h-fit rounded-full max-w-48" src="assets/bitoque.jpg" alt="Prato2">
-
-                    <h4>Bitoque de Porco</h4>
-                    
-                    <p>O bitoque, uma delícia presente na maioria dos locais, naturalmente, não podia faltar em nosso restaurante.</p>
-                </div>
-
-                <div class="flex flex-col gap-8 items-center">
-                    <img class="w-full h-fit rounded-full max-w-48" src="assets/bochechas.jpg" alt="Prato3">
-
-                    <h4>Bochechas estufadas</h4>
-                    
-                    <p>O bitoque, uma delícia presente na maioria dos locais, naturalmente, não podia faltar em nosso restaurante.</p>
-                </div>
+        <section class="shadow-[0_-19px_64px_-42px_rgba(0,0,0,0.80)] w-full !bg-white z-99 rounded-t-[100px] md:rounded-t-[200px] 2xl:rounded-t-[300px] sticky">
+            <div class=" flex flex-col gap-12 w-full  text-center p-10 max-w-[1280px] mx-auto">
                 
-            </div>
-            <div class="w-full h-fit">
-                <a href="" class="text-[#F57D1B] text-sm px-10 py-3 bg-[#F57D1B]/10 rounded-lg border-4 border-[#F57D1B]">Ver Menu</a>
-            </div>
-
-            <div class="divisor"></div> <!--Divisão de conteúdo-->
-
-            <!--Avaliações-->
-            <h3>Avaliações</h3>
-
-            <div>
-                <div class="flex flex-col md:flex-row gap-15 md:gap-10">
-                    <!--Card de avaliação-->
-                    <div class="bg-[#F57D1B]/50 flex flex-col gap-8 items-center p-10 rounded-xl"> 
-                        
-                        <img class="w-20 h-15 absolute left-1/6 -translate-x-1/6 -translate-y-18 md:left-1/14" src="assets/aspas.png" alt="">
+                <!--Sobre Nós-->
+                <h3 class="font-semibold">Sobre Nós</h3>
+                <p class="!text-black">Lorem ipsum dolor sit amet consectetur adipisicing elit. A velit labore, harum blanditiis, consectetur rem, architecto explicabo distinctio voluptates accusamus vero quo quas adipisci corporis nemo vel doloremque sunt veniam ad! Consectetur eveniet dolorem maiores totam error, praesentium tempora assumenda. Quam nam quaerat dicta ex recusandae quos, dignissimos beatae placeat?</p>
+                
+                <div class="divisor"></div> <!--Divisão de conteúdo-->
+                
+                
+                <!--Pratos populares-->
+                <h3>Pratos Populares</h3>
+                <div class="flex flex-col gap-12 md:flex-row">
+                    <div class="flex flex-col gap-8 items-center">
+                        <img class="w-full h-fit rounded-full max-w-48" src="assets/frango.jpg" alt="Prato1">
     
-                        <div class="bg-gradient-to-b from-[#F57D1B] to-[#E11A23] h-2/4 w-2/4 p-2 bg-white rounded-full max-w-40">
-                            <img class="w-full h-full rounded-full " src="assets/bochechas.jpg" alt="Prato3">
-                        </div>
-    
-                        <h4 class="!text-white">John Doe</h4>
+                        <h4>Frango Grelhado</h4>
                         
-                        <p class="!text-white !text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et culpa incidunt porro facere aperiam recusandae vel nesciunt soluta animi ab doloremque repellat accusantium magnam enim</p>
+                        <p>A nossa casa é afamada pelo extraordinário frango assado ao dispor, suculento e cheio de sabor, quem prova nunca se desaponta</p>
+                    </div>
+    
+                    <div class="flex flex-col gap-8 items-center">
+                        <img class="w-full h-fit rounded-full max-w-48" src="assets/bitoque.jpg" alt="Prato2">
+    
+                        <h4>Bitoque de Porco</h4>
+                        
+                        <p>O bitoque, uma delícia presente na maioria dos locais, naturalmente, não podia faltar em nosso restaurante.</p>
+                    </div>
+    
+                    <div class="flex flex-col gap-8 items-center">
+                        <img class="w-full h-fit rounded-full max-w-48" src="assets/bochechas.jpg" alt="Prato3">
+    
+                        <h4>Bochechas estufadas</h4>
+                        
+                        <p>O bitoque, uma delícia presente na maioria dos locais, naturalmente, não podia faltar em nosso restaurante.</p>
                     </div>
                     
-                    <!--Card de avaliação-->
-                    <div class="bg-[#F57D1B]/50 flex flex-col gap-8 items-center p-10 rounded-xl"> 
-                        
-                        <img class="w-20 h-15 absolute left-1/6 -translate-x-1/6 -translate-y-18 md:left-4/10" src="assets/aspas.png" alt="">
-    
-                        <div class="bg-gradient-to-b from-[#F57D1B] to-[#E11A23] h-2/4 w-2/4 p-2 bg-white rounded-full max-w-40">
-                            <img class="w-full h-full rounded-full " src="assets/bochechas.jpg" alt="Prato3">
-                        </div>
-    
-                        <h4 class="!text-white">John Doe</h4>
-                        
-                        <p class="!text-white !text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et culpa incidunt porro facere aperiam recusandae vel nesciunt soluta animi ab doloremque repellat accusantium magnam enim</p>
-                    </div>
-                    
-                    <!--Card de avaliação-->
-                    <div class="bg-[#F57D1B]/50 flex flex-col gap-8 items-center p-10 rounded-xl"> 
-                        
-                        <img class="w-20 h-15 absolute left-1/6 -translate-x-1/6 -translate-y-18 md:left-11/15" src="assets/aspas.png" alt="">
-    
-                        <div class="bg-gradient-to-b from-[#F57D1B] to-[#E11A23] h-2/4 w-2/4 p-2 bg-white rounded-full max-w-40">
-                            <img class="w-full h-full rounded-full " src="assets/bochechas.jpg" alt="Prato3">
-                        </div>
-    
-                        <h4 class="!text-white">John Doe</h4>
-                        
-                        <p class="!text-white !text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et culpa incidunt porro facere aperiam recusandae vel nesciunt soluta animi ab doloremque repellat accusantium magnam enim</p>
-                    </div>
-    
                 </div>
+                <div class="w-full h-fit">
+                    <a href="" class="text-[#F57D1B] text-sm px-10 py-3 bg-[#F57D1B]/10 rounded-lg border-4 border-[#F57D1B]">Ver Menu</a>
+                </div>
+    
+                <div class="divisor"></div> <!--Divisão de conteúdo-->
+    
+                <!--Avaliações-->
+                <h3>Avaliações</h3>
+    
                 <div>
-                    <p class="!text-xs">Fonte: <a class="underline hover:text-[#F57D1B]" href="https://www.google.pt/maps/place/Restaurante+Frango+da+Ria/@37.0583852,-7.7688428,17z/data=!3m1!4b1!4m6!3m5!1s0xd100016887fa9f1:0x1125e0668f3c0249!8m2!3d37.0583852!4d-7.7662679!16s%2Fg%2F11c545nrsj?hl=pt-PT&entry=ttu&g_ep=EgoyMDI1MDMyNS4xIKXMDSoJLDEwMjExNDUzSAFQAw%3D%3D">Google Maps - Reviews</a></p>
+                    <div class="flex flex-col md:flex-row gap-15 md:gap-10">
+                        <!--Card de avaliação-->
+                        <div class="bg-[#F57D1B]/50 flex relative flex-col gap-8 items-center p-10 rounded-xl"> 
+                            
+                            <img class="w-20 h-15 absolute left-1/6 -translate-x-1/6 -translate-y-18 md:left-1/14" src="assets/aspas.png" alt="">
+        
+                            <div class="bg-gradient-to-b from-[#F57D1B] to-[#E11A23] h-2/4 w-2/4 p-2 bg-white rounded-full max-w-40">
+                                <img class="w-full h-full rounded-full " src="assets/bochechas.jpg" alt="Prato3">
+                            </div>
+        
+                            <h4 class="!text-white">John Doe</h4>
+                            
+                            <p class="!text-white !text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et culpa incidunt porro facere aperiam recusandae vel nesciunt soluta animi ab doloremque repellat accusantium magnam enim</p>
+                        </div>
+                        
+                        <!--Card de avaliação-->
+                        <div class="bg-[#F57D1B]/50 flex flex-col relative gap-8 items-center p-10 rounded-xl"> 
+                            
+                            <img class="w-20 h-15 absolute left-1/6 -translate-x-1/6 -translate-y-18 md:left-1/14" src="assets/aspas.png" alt="">
+        
+                            <div class="bg-gradient-to-b from-[#F57D1B] to-[#E11A23] h-2/4 w-2/4 p-2 bg-white rounded-full max-w-40">
+                                <img class="w-full h-full rounded-full " src="assets/bochechas.jpg" alt="Prato3">
+                            </div>
+        
+                            <h4 class="!text-white">John Doe</h4>
+                            
+                            <p class="!text-white !text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et culpa incidunt porro facere aperiam recusandae vel nesciunt soluta animi ab doloremque repellat accusantium magnam enim</p>
+                        </div>
+                        
+                        <!--Card de avaliação-->
+                        <div class="bg-[#F57D1B]/50 flex flex-col relative gap-8 items-center p-10 rounded-xl"> 
+                            
+                            <img class="w-20 h-15 absolute left-1/6 -translate-x-1/6 -translate-y-18 md:left-1/14" src="assets/aspas.png" alt="">
+        
+                            <div class="bg-gradient-to-b from-[#F57D1B] to-[#E11A23] h-2/4 w-2/4 p-2 bg-white rounded-full max-w-40">
+                                <img class="w-full h-full rounded-full " src="assets/bochechas.jpg" alt="Prato3">
+                            </div>
+        
+                            <h4 class="!text-white">John Doe</h4>
+                            
+                            <p class="!text-white !text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et culpa incidunt porro facere aperiam recusandae vel nesciunt soluta animi ab doloremque repellat accusantium magnam enim</p>
+                        </div>
+        
+                    </div>
+                    <div>
+                        <p class="!text-xs">Fonte: <a class="underline hover:text-[#F57D1B]" href="https://www.google.pt/maps/place/Restaurante+Frango+da+Ria/@37.0583852,-7.7688428,17z/data=!3m1!4b1!4m6!3m5!1s0xd100016887fa9f1:0x1125e0668f3c0249!8m2!3d37.0583852!4d-7.7662679!16s%2Fg%2F11c545nrsj?hl=pt-PT&entry=ttu&g_ep=EgoyMDI1MDMyNS4xIKXMDSoJLDEwMjExNDUzSAFQAw%3D%3D">Google Maps - Reviews</a></p>
+                    </div>
                 </div>
-            </div>
-
-            <div class="divisor"></div> <!--Divisão de conteúdo-->
-
-            <h3>Onde estamos</h3>
-
-            <div class="flex flex-col gap-8 md:flex-row">
-                <div class="flex flex-col w-full justify-evenly gap-5">
-                    <div class="flex flex-col gap-2 md:gap-5">
-                        <p class="font-semibold">De Quinta à Segunda-feira: 12H - 15H e 19H - 23H</p>
-                        <p class="font-semibold">Folgas semanais: Terças e Quintas feiras.</p>
+    
+                <div class="divisor"></div> <!--Divisão de conteúdo-->
+    
+                <h3>Onde estamos</h3>
+    
+                <div class="flex flex-col gap-8 md:flex-row">
+                    <div class="flex flex-col w-full justify-evenly gap-5">
+                        <div class="flex flex-col gap-2 md:gap-5">
+                            <p class="font-semibold">De Quinta à Segunda-feira: 12H - 15H e 19H - 23H</p>
+                            <p class="font-semibold">Folgas semanais: Terças e Quintas feiras.</p>
+                        </div>
+                        
+                        <div class="invisible md:visible divisor"></div> <!--Divisão de conteúdo-->
+                        
+                        <p class="font-semibold">Morada: N125 51Z, 8700-127 Moncarapacho</p>
                     </div>
                     
-                    <div class="invisible md:visible divisor"></div> <!--Divisão de conteúdo-->
-                    
-                    <p class="font-semibold">Morada: N125 51Z, 8700-127 Moncarapacho</p>
+                    <iframe class="w-full md:w-3/4 h-70" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7572.820133510763!2d-7.773161148401791!3d37.057991907550296!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd100016887fa9f1%3A0x1125e0668f3c0249!2sRestaurante%20Frango%20da%20Ria!5e0!3m2!1spt-PT!2spt!4v1743183780624!5m2!1spt-PT!2spt" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
-                
-                <iframe class="w-full md:w-3/4 h-70" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7572.820133510763!2d-7.773161148401791!3d37.057991907550296!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd100016887fa9f1%3A0x1125e0668f3c0249!2sRestaurante%20Frango%20da%20Ria!5e0!3m2!1spt-PT!2spt!4v1743183780624!5m2!1spt-PT!2spt" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
         </section>
     </main>
 
   <!-- Rodapé -->
   <footer class="z-99 text-white bg-[#FCCE35] shadow px-10 sticky">
-    <div class="flex flex-col md:flex-row md:gap-3 py-5">
+    <div class="flex flex-col md:flex-row md:gap-3 py-5 max-w-[1280px] mx-auto">
         <form action="https://formsubmit.co/iurimarcianom@hotmail.com" method="POST" class="w-full text-white flex flex-col gap-2" enctype="multipart/form-data">
             <h4 class="!text-white">Envie-nos email</h4>
             
@@ -206,7 +209,7 @@
     
         <div class="text-white border-1 my-5 md:my-0"></div>
     
-        <div class=" text-white flex flex-col gap-4 items-center text-center w-full md:w-2/4 md:justify-evenly">
+        <div class=" text-white flex flex-col gap-4 items-center md:items-end md:text-end text-center w-full md:w-2/4 md:justify-evenly">
             <h5>Telemovel: 96999999</h5>
     
             <h5>Email: frangodaria@hotmail.com</h5>
@@ -220,15 +223,15 @@
         </div>
     </div>
 
-    <hr class="text-white border-t-2">
+    <hr class="text-white border-t-2 max-w-[1280px] mx-auto">
 
-    <div class="flex justify-center py-5">
+    <div class="flex justify-center py-5 max-w-[1280px] mx-auto">
         <a href="" class="w-fit block hover:underline hover:text-[#99B1B5]">
             <h6>Politica de Privacidade</h6>
         </a>
     </div>
 
-    <div class="text-white mx-auto text-center border-t-2 py-3">
+    <div class="text-white mx-auto text-center border-t-2 py-3 max-w-[1280px] mx-auto">
       <p class="!text-xs !text-center">&copy; 2025 Todos os direitos reservados a Restaurante Frango da Ria - Fornecido por <a href="" class="underline hover:text-red-600">RedDune Solutions</a></p>
     </div>
   </footer>
