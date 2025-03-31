@@ -49,6 +49,36 @@ main section div.divisor{
   background-color: red;
 }
 
+caption{
+  font-size: 24px;
+  text-align: start;
+  padding: 10px;
+  border-bottom: 3px solid #99B1B5;
+  margin-bottom: 15px;
+  width: fit-content;
+  padding-right: 40px;
+  font-weight: 600;
+  color: white;
+}
+
+tr, th, td{
+  background-color: white;
+  border-spacing: 30px;
+  border-radius: 4px;
+  text-wrap: nowrap;
+  height: fit-content;
+  padding: 5px 8px;
+  font-size: 12px;
+}
+th{
+  font-size: 14px;
+}
+
+table{
+  border-collapse: separate;
+  border-spacing: 5px;
+  width: 100%;
+}
 
 /*Input costumization*/
 input, textarea, button{
@@ -144,12 +174,12 @@ input:focus, textarea:focus{
   }
 
 
-/* costumização de scrollbar */
-
+/* Costumização de scrollbar */
 
 /* Works on Chrome, Edge, and Safari */
 *::-webkit-scrollbar {
   width: 8px;
+  height: 8px;
 }
 
 *::-webkit-scrollbar-track {
