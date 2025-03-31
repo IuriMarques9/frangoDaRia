@@ -36,8 +36,8 @@
     </header>
     <!-- Fim Cabeçalho -->
 
-    <!-- Hero -->
-    <section class="w-full fixed left-[50%] h-screen -translate-x-[50%]">
+    <!-- Hero mobile -->
+    <section class="md:hidden w-full fixed left-[50%] h-screen -translate-x-[50%]">
         <div class="flex items-center bg-[url(assets/hero.png)] bg-center bg-fixed bg-no-repeat bg-cover w-full h-[110vh]">
             
             <div class="bg-black/20 p-10 flex flex-col gap-8 text-center mx-auto w-10/12 h-fit max-w-[1280px] mx-auto">
@@ -46,13 +46,26 @@
             </div>
         </div>
     </section>
+
+    <!-- Hero desktop -->
+    <section class="hidden md:block w-full fixed left-[50%] h-screen -translate-x-[50%] bg-[#FCCE35]">
+        <div class="flex mt-[130px] h-[80vh] items-center place-self-end w-9/10 max-w-[1880px]">
+            <div class="p-10 flex flex-col gap-18 text-center w-10/12 h-fit">
+                <h1>Frango da Ria</h1>
+                <p class="text-white !text-center">Sorria!! Esta no Frango da Ria. Onde o frango esta no ponto e os sabores conquistam.</p>
+            </div>
+    
+            <div class="flex items-center bg-[url(assets/hero.png)] bg-center bg-fixed bg-no-repeat bg-cover w-9/10 rounded-l-full h-full"></div>
+        </div>
+        
+    </section>
     
     <!-- Conteúdo Principal -->
     <main>
         <div class="h-[100vh]"></div> <!--Container de altura para o hero-->
         <!--Conteudo-->
         <section class="shadow-[0_-19px_64px_-42px_rgba(0,0,0,0.80)] w-full !bg-white z-99 rounded-t-[100px] md:rounded-t-[200px] 2xl:rounded-t-[300px] sticky">
-            <div class=" flex flex-col gap-12 w-full  text-center p-10 max-w-[1280px] mx-auto">
+            <div class=" flex flex-col gap-12 w-full text-center p-10 max-w-[1280px] mx-auto">
                 
                 <!--Sobre Nós-->
                 <h3 class="font-semibold">Sobre Nós</h3>
@@ -90,7 +103,7 @@
                     
                 </div>
                 <div class="w-full h-fit">
-                    <a href="" class="text-[#F57D1B] text-sm px-10 py-3 bg-[#F57D1B]/10 rounded-lg border-4 border-[#F57D1B]">Ver Menu</a>
+                    <a href="" class="text-[#F57D1B] text-sm px-10 py-3 bg-[#F57D1B]/10 rounded-lg border-4 border-[#F57D1B] hover:border-[#99B1B5] hover:text-[#99B1B5]">Ver Menu</a>
                 </div>
     
                 <div class="divisor"></div> <!--Divisão de conteúdo-->
@@ -144,7 +157,7 @@
         
                     </div>
                     <div>
-                        <p class="!text-xs">Fonte: <a class="underline hover:text-[#F57D1B]" href="https://www.google.pt/maps/place/Restaurante+Frango+da+Ria/@37.0583852,-7.7688428,17z/data=!3m1!4b1!4m6!3m5!1s0xd100016887fa9f1:0x1125e0668f3c0249!8m2!3d37.0583852!4d-7.7662679!16s%2Fg%2F11c545nrsj?hl=pt-PT&entry=ttu&g_ep=EgoyMDI1MDMyNS4xIKXMDSoJLDEwMjExNDUzSAFQAw%3D%3D">Google Maps - Reviews</a></p>
+                        <p class="!text-xs">Fonte: <a class="underline hover:text-[#99B1B5]" href="https://www.google.pt/maps/place/Restaurante+Frango+da+Ria/@37.0583852,-7.7688428,17z/data=!3m1!4b1!4m6!3m5!1s0xd100016887fa9f1:0x1125e0668f3c0249!8m2!3d37.0583852!4d-7.7662679!16s%2Fg%2F11c545nrsj?hl=pt-PT&entry=ttu&g_ep=EgoyMDI1MDMyNS4xIKXMDSoJLDEwMjExNDUzSAFQAw%3D%3D">Google Maps - Reviews</a></p>
                     </div>
                 </div>
     
