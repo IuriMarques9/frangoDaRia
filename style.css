@@ -1,24 +1,30 @@
+
 h1{
-    font-size: 38px;
+    font-size: 3rem;
     color: white;
-    font-weight: bold;
+    font-family: "Abril Fatface", serif;
+    letter-spacing: 1px;
 }
 
 h2{
     font-size: 34px;
-    font-weight: 600;
+    font-family: "Abril Fatface", serif;
+    letter-spacing: 1px;  
 }
 
 h3{
     font-size: 28px;
-    font-weight: 700;
     color: #F47D1B;
+    font-family: "Abril Fatface", serif;
+    letter-spacing: 1px;  
 }
 
 h4{
     font-size: 24px;
-    font-weight: 600;
   color: #F47D1B;
+  font-family: "Abril Fatface", serif;
+  letter-spacing: 1px;
+
 }
 
 h5{
@@ -34,6 +40,7 @@ label{
 p{
     font-size: 15px;
     text-align: justify;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 main section div.divisor{
@@ -45,6 +52,7 @@ main section div.divisor{
 
 /*Input costumization*/
 input, textarea, button{
+    font-family: Arial, Helvetica, sans-serif;
     border: 3px solid white;
     border-radius: 5px;
     padding-left: 10px;
