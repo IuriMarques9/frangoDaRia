@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Frango da Ria - Galeria</title>
+
+    <!-- Link para o Tailwind CSS via CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!-- Meta description para SEO -->
+    <meta name="description" content="Bem-vindo ao Frango da Ria. Descubra nosso o frango que conquista.">
+  
+    <!--Abril Fatface Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+    
+    
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="assets/icon.png" type="image/x-icon">
+
+</head>
+<body class="bg-[#FCCE35] text-gray-900 min-w-[300px] ">
+    
+    <!-- Cabeçalho -->
+    <header class="z-10 bg-[#FCCE35] shadow top-0 w-full z-40 ">
+        <div class="p-5 flex flex-col gap-3 md:flex-row md:jusitfy-between max-w-[1280px] mx-auto">
+            <a href="index.html" class="w-fit block mx-auto">
+                <img src="assets/logo-frango-sem-fundo.png" alt="Logo" class="max-w-48 w-full">
+            </a>
+
+            <nav class="w-full">
+                <ul class="flex justify-center md:justify-end space-x-4 h-full items-center">
+                    <li><a href="index.html" class="text-white font-semibold decoration-3 decoration-[#99B1B5] hover:underline">Inicio</a></li>
+                    <li class="underline text-white font-semibold decoration-3 decoration-[#99B1B5] hover:cursor-default">Galeria</li>
+                    <li><a href="menu.html" class="text-white font-semibold decoration-3 decoration-[#99B1B5] hover:underline">Menu</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!-- Fim Cabeçalho -->
+
+    
+    <!-- Conteúdo Principal -->
+    <main class="p-10 max-w-[1280px] mx-auto">
+        <h2 class="mb-10 text-white">Galeria</h2>
+
+        <section class="bg-[#9AB1B5]/25 p-5 min-w-[350px] flex flex-wrap gap-5 justify-evenly">
+            <img src="assets/bitoque.jpg" alt="" class="max-w-[100%] h-auto inline-block w-60">
+            <img src="assets/bitoque.jpg" alt="" class="max-w-[100%] h-auto inline-block w-60">
+            <img src="assets/bitoque.jpg" alt="" class="max-w-[100%] h-auto inline-block w-60">
+            <img src="assets/bitoque.jpg" alt="" class="max-w-[100%] h-auto inline-block w-60">
+            <img src="assets/bitoque.jpg" alt="" class="max-w-[100%] h-auto inline-block w-60">
+            <img src="assets/bitoque.jpg" alt="" class="max-w-[100%] h-auto inline-block w-60">
+            <img src="assets/bitoque.jpg" alt="" class="max-w-[100%] h-auto inline-block w-60">
+            <img src="assets/bitoque.jpg" alt="" class="max-w-[100%] h-auto inline-block w-60">
+            
+        </section>
+        
+        
+
+        
+    </main>
+
+  <!-- Rodapé -->
+  <footer class="z-99 text-white bg-[#FCCE35] shadow px-10 sticky">
+    <div class="flex flex-col md:flex-row md:gap-3 py-5 max-w-[1280px] mx-auto">
+        <form action="https://formsubmit.co/iurimarcianom@hotmail.com" method="POST" class="w-full text-white flex flex-col gap-2" enctype="multipart/form-data">
+            <h4 class="!text-white">Envie-nos email</h4>
+            
+            <div class="flex flex-col gap-1"> <!-- Input Name -->
+                <label for="nome">Nome</label>
+                <input placeholder="Primeiro Nome" type="text" name="nome" required>
+            </div>
+            
+            <div class="flex flex-col gap-1"> <!-- Input Email -->
+                <label for="email">Email</label>
+                <input placeholder="exemplo@exemplo.com" type="email" name="email" required>
+            </div>
+    
+            <div class="flex flex-col gap-1"> <!-- Input Messsage -->
+                <label for="mensagem">Mensagem</label>
+                <textarea placeholder="Escreve aqui a tua mensagem" rows="3" name="mensagem" required></textarea>
+            </div>
+    
+            <div>
+                <label class="container"> <!-- Input CheckBox -->                
+                    <input type="checkbox" class="h-fit" name="politica" required>
+                    <span class="checkmark"></span>
+                    Concordo com a
+                </label>
+                <a href="" class="font-[600] text-[12px] underline hover:text-[#99B1B5]">Politica de Privacidade</a>
+            </div>
+    
+            <button type="submit" value="Enviar" class="py-2 cursor-pointer hover:!border-[#99B1B5] font-semibold">Enviar</button> <!-- Submit Button -->
+    
+            <input type="hidden" name="_next" value="https://yourdomain.com/email.html"> <!-- Redirect page -->
+            <input type="hidden" name="_template" value="table"> <!-- Email Template-->
+            <input type="hidden" name="_captcha" value="false"> <!-- ReCaptcha Remove -->
+        </form>
+    
+        <div class="text-white border-1 my-5 md:my-0"></div>
+    
+        <div class=" text-white flex flex-col gap-4 items-center md:items-end md:text-end text-center w-full md:w-2/4 md:justify-evenly">
+            <h5>Telemovel: 96999999</h5>
+    
+            <h5>Email: frangodaria@hotmail.com</h5>
+    
+            <h5>Para mais informações contacte-nos atraves do numero de telefone, envie-nos um email ou contacte-nos pelo formulario acima.</h5>
+    
+            <a href="https://www.facebook.com/profile.php?id=100054500947865">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"><path class="hover:fill-[#1877F2]" fill="#fff" d="M17 1H3c-1.1 0-2 .9-2 2v14c0 1.101.9 2 2 2h7v-7H8V9.525h2v-2.05c0-2.164 1.212-3.684 3.766-3.684l1.803.002v2.605h-1.197c-.994 0-1.372.746-1.372 1.438v1.69h2.568L15 12h-2v7h4c1.1 0 2-.899 2-2V3c0-1.1-.9-2-2-2"/></svg>
+            </a>
+              
+        </div>
+    </div>
+
+    <hr class="text-white border-t-2 max-w-[1280px] mx-auto">
+
+    <div class="flex justify-center py-5 max-w-[1280px] mx-auto">
+        <a href="" class="w-fit block hover:underline hover:text-[#99B1B5]">
+            <h6>Politica de Privacidade</h6>
+        </a>
+    </div>
+
+    <div class="text-white mx-auto text-center border-t-2 py-3 max-w-[1280px] mx-auto">
+      <p class="!text-xs !text-center">&copy; 2025 Todos os direitos reservados a Restaurante Frango da Ria - Fornecido por <a href="" class="underline hover:text-red-600">RedDune Solutions</a></p>
+    </div>
+  </footer>
+</body>
+</html>
