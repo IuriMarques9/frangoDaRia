@@ -61,17 +61,15 @@ caption{
   color: white;
 }
 
-tr, th, td{
+tr, td{
   background-color: white;
   border-spacing: 30px;
   border-radius: 4px;
   text-wrap: nowrap;
   height: fit-content;
-  padding: 2px 8px;
+  padding: 4px 8px;
   font-size: 14px;
-}
-th{
-  font-size: 16px;
+
 }
 
 table{
