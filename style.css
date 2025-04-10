@@ -1,6 +1,7 @@
 *{
   transition: all 0.20s ease-in-out;
 }
+
 h1{
     font-size: 3rem;
     color: white;
@@ -92,13 +93,14 @@ table{
 .double-4:hover {
   --p:50.1%
 }
+
 /*Classe personalizada para a aba do menu*/
 .selecionado{
   background-image:  linear-gradient(to bottom, #9AB1B5,  rgba(154, 177, 181, 0.05));
   cursor: default;
-}
-.selecionado:hover {
-
+  text-decoration: underline;
+  text-decoration-color: white;
+  transition: none;
 }
 
 /*Input costumization*/
