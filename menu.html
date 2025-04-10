@@ -23,7 +23,14 @@
 
 </head>
 <body class="bg-[#FCCE35] text-gray-900 min-w-[300px] ">
-    
+
+    <!--Esta div mostra a imagem do produto-->
+    <div id="VisualizadorImagem" class="hidden bg-black/70 fixed z-50 flex justify-center items-center h-screen w-full">
+        <img src="assets/bitoque.jpg" class="w-45 h-45" alt="">
+
+        <svg onclick="mostrarProduto()" class="absolute top-5 right-5 hover:opacity-50 hover:scale-110 hover:cursor-pointer" fill="#ababab" height="15px" width="15px" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 460.775 460.775" xml:space="preserve" stroke="#6b6b6b"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M285.08,230.397L456.218,59.27c6.076-6.077,6.076-15.911,0-21.986L423.511,4.565c-2.913-2.911-6.866-4.55-10.992-4.55 c-4.127,0-8.08,1.639-10.993,4.55l-171.138,171.14L59.25,4.565c-2.913-2.911-6.866-4.55-10.993-4.55 c-4.126,0-8.08,1.639-10.992,4.55L4.558,37.284c-6.077,6.075-6.077,15.909,0,21.986l171.138,171.128L4.575,401.505 c-6.074,6.077-6.074,15.911,0,21.986l32.709,32.719c2.911,2.911,6.865,4.55,10.992,4.55c4.127,0,8.08-1.639,10.994-4.55 l171.117-171.12l171.118,171.12c2.913,2.911,6.866,4.55,10.993,4.55c4.128,0,8.081-1.639,10.992-4.55l32.709-32.719 c6.074-6.075,6.074-15.909,0-21.986L285.08,230.397z"></path> </g></svg>
+    </div>
+
     <!-- Cabeçalho -->
     <header class="z-10 bg-[#FCCE35] shadow top-0 w-full z-40 ">
         <div class="p-5 flex flex-col gap-3 md:flex-row md:jusitfy-between max-w-[1280px] mx-auto">
@@ -41,11 +48,13 @@
         </div>
     </header>
     <!-- Fim Cabeçalho -->
+    
 
     
     <!-- Conteúdo Principal -->
     <main class="p-10 max-w-[1280px] mx-auto">
         <h2 class="mb-10 text-white">Cardápio</h2>
+
 
         <div class="">
             <div class="w-full flex text-center">
@@ -71,12 +80,12 @@
                                 <td>Couvert</td>
                                 <td class="text-center">1.45€</td>
                                 <td class="text-center">
-                                    <svg class="cursor-pointer mx-auto h-fit w-fit hover:scale-120 md:hidden  dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="#F47D1B" viewBox="0 0 24 24">
+                                    <svg onclick="mostrarProduto()" class="cursor-pointer mx-auto h-fit w-fit hover:scale-120 md:hidden  dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="#F47D1B" viewBox="0 0 24 24">
                                         <path stroke="currentColor" stroke-width="2" d="M21 12c0 1.2-4.03 6-9 6s-9-4.8-9-6c0-1.2 4.03-6 9-6s9 4.8 9 6Z"/>
                                         <path stroke="currentColor" stroke-width="2" d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"/>
                                     </svg>
         
-                                    <h6 class="cursor-pointer mx-auto w-fit hidden md:block hover:text-[#99B1B5] hover:underline">Ver produto</h6>
+                                    <h6 onclick="mostrarProduto()" class="cursor-pointer mx-auto w-fit hidden md:block hover:text-[#99B1B5] hover:underline">Ver produto</h6>
                                 </td>
                                   
                             </tr>
@@ -84,48 +93,48 @@
                                 <td>Queijo</td>
                                 <td class="text-center">3.90€</td>
                                 <td class="text-center">
-                                    <svg class="cursor-pointer mx-auto h-fit w-fit hover:scale-120 md:hidden  dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="#F47D1B" viewBox="0 0 24 24">
+                                    <svg onclick="mostrarProduto()" class="cursor-pointer mx-auto h-fit w-fit hover:scale-120 md:hidden  dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="#F47D1B" viewBox="0 0 24 24">
                                         <path stroke="currentColor" stroke-width="2" d="M21 12c0 1.2-4.03 6-9 6s-9-4.8-9-6c0-1.2 4.03-6 9-6s9 4.8 9 6Z"/>
                                         <path stroke="currentColor" stroke-width="2" d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"/>
                                     </svg>
         
-                                    <h6 class="cursor-pointer mx-auto w-fit hidden md:block hover:text-[#99B1B5] hover:underline">Ver produto</h6>
+                                    <h6 onclick="mostrarProduto()" class="cursor-pointer mx-auto w-fit hidden md:block hover:text-[#99B1B5] hover:underline">Ver produto</h6>
                                 </td>
                             </tr>
                             <tr>
                                 <td>Sopa</td>
                                 <td class="text-center">2.70€</td>
                                 <td class="text-center">
-                                    <svg class="cursor-pointer mx-auto h-fit w-fit hover:scale-120 md:hidden  dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="#F47D1B" viewBox="0 0 24 24">
+                                    <svg onclick="mostrarProduto()" class="cursor-pointer mx-auto h-fit w-fit hover:scale-120 md:hidden  dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="#F47D1B" viewBox="0 0 24 24">
                                         <path stroke="currentColor" stroke-width="2" d="M21 12c0 1.2-4.03 6-9 6s-9-4.8-9-6c0-1.2 4.03-6 9-6s9 4.8 9 6Z"/>
                                         <path stroke="currentColor" stroke-width="2" d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"/>
                                     </svg>
         
-                                    <h6 class="cursor-pointer mx-auto w-fit hidden md:block hover:text-[#99B1B5] hover:underline">Ver produto</h6>
+                                    <h6 onclick="mostrarProduto()" class="cursor-pointer mx-auto w-fit hidden md:block hover:text-[#99B1B5] hover:underline">Ver produto</h6>
                                 </td>
                             </tr>
                             <tr>
                                 <td>Omelete</td>
                                 <td class="text-center">3.90€</td>
                                 <td class="text-center">
-                                    <svg class="cursor-pointer mx-auto h-fit w-fit hover:scale-120 md:hidden  dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="#F47D1B" viewBox="0 0 24 24">
+                                    <svg onclick="mostrarProduto()" class="cursor-pointer mx-auto h-fit w-fit hover:scale-120 md:hidden  dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="#F47D1B" viewBox="0 0 24 24">
                                         <path stroke="currentColor" stroke-width="2" d="M21 12c0 1.2-4.03 6-9 6s-9-4.8-9-6c0-1.2 4.03-6 9-6s9 4.8 9 6Z"/>
                                         <path stroke="currentColor" stroke-width="2" d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"/>
                                     </svg>
         
-                                    <h6 class="cursor-pointer mx-auto w-fit hidden md:block hover:text-[#99B1B5] hover:underline">Ver produto</h6>
+                                    <h6 onclick="mostrarProduto()" class="cursor-pointer mx-auto w-fit hidden md:block hover:text-[#99B1B5] hover:underline">Ver produto</h6>
                                 </td>
                             </tr>
                             <tr>
                                 <td>Camarão à Ria</td>
                                 <td class="text-center">11.90€</td>
                                 <td class="text-center">
-                                    <svg class="cursor-pointer mx-auto h-fit w-fit hover:scale-120 md:hidden  dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="#F47D1B" viewBox="0 0 24 24">
+                                    <svg onclick="mostrarProduto()" class="cursor-pointer mx-auto h-fit w-fit hover:scale-120 md:hidden  dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="#F47D1B" viewBox="0 0 24 24">
                                         <path stroke="currentColor" stroke-width="2" d="M21 12c0 1.2-4.03 6-9 6s-9-4.8-9-6c0-1.2 4.03-6 9-6s9 4.8 9 6Z"/>
                                         <path stroke="currentColor" stroke-width="2" d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"/>
                                     </svg>
         
-                                    <h6 class="cursor-pointer mx-auto w-fit hidden md:block hover:text-[#99B1B5] hover:underline">Ver produto</h6>
+                                    <h6 onclick="mostrarProduto()" class="cursor-pointer mx-auto w-fit hidden md:block hover:text-[#99B1B5] hover:underline">Ver produto</h6>
                                 </td>
                             </tr>
                         </tbody>
@@ -142,12 +151,12 @@
                                 <td>1/2 Frango Grelhado</td>
                                 <td class="text-center">8.90€</td>
                                 <td class="text-center">
-                                    <svg class="cursor-pointer mx-auto h-fit w-fit hover:scale-120 md:hidden  dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="#F47D1B" viewBox="0 0 24 24">
+                                    <svg onclick="mostrarProduto()" class="cursor-pointer mx-auto h-fit w-fit hover:scale-120 md:hidden  dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="#F47D1B" viewBox="0 0 24 24">
                                         <path stroke="currentColor" stroke-width="2" d="M21 12c0 1.2-4.03 6-9 6s-9-4.8-9-6c0-1.2 4.03-6 9-6s9 4.8 9 6Z"/>
                                         <path stroke="currentColor" stroke-width="2" d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"/>
                                     </svg>
         
-                                    <h6 class="cursor-pointer mx-auto w-fit hidden md:block hover:text-[#99B1B5] hover:underline">Ver produto</h6>
+                                    <h6 onclick="mostrarProduto()" class="cursor-pointer mx-auto w-fit hidden md:block hover:text-[#99B1B5] hover:underline">Ver produto</h6>
                                 </td>
                                   
                             </tr>
@@ -155,84 +164,84 @@
                                 <td>Entrecosto</td>
                                 <td class="text-center">10.90€</td>
                                 <td class="text-center">
-                                    <svg class="cursor-pointer mx-auto h-fit w-fit hover:scale-120 md:hidden  dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="#F47D1B" viewBox="0 0 24 24">
+                                    <svg onclick="mostrarProduto()" class="cursor-pointer mx-auto h-fit w-fit hover:scale-120 md:hidden  dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="#F47D1B" viewBox="0 0 24 24">
                                         <path stroke="currentColor" stroke-width="2" d="M21 12c0 1.2-4.03 6-9 6s-9-4.8-9-6c0-1.2 4.03-6 9-6s9 4.8 9 6Z"/>
                                         <path stroke="currentColor" stroke-width="2" d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"/>
                                     </svg>
         
-                                    <h6 class="cursor-pointer mx-auto w-fit hidden md:block hover:text-[#99B1B5] hover:underline">Ver produto</h6>
+                                    <h6 onclick="mostrarProduto()" class="cursor-pointer mx-auto w-fit hidden md:block hover:text-[#99B1B5] hover:underline">Ver produto</h6>
                                 </td>
                             </tr>
                             <tr>
                                 <td>Bife da vazia</td>
                                 <td class="text-center">16.50€</td>
                                 <td class="text-center">
-                                    <svg class="cursor-pointer mx-auto h-fit w-fit hover:scale-120 md:hidden  dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="#F47D1B" viewBox="0 0 24 24">
+                                    <svg onclick="mostrarProduto()" class="cursor-pointer mx-auto h-fit w-fit hover:scale-120 md:hidden  dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="#F47D1B" viewBox="0 0 24 24">
                                         <path stroke="currentColor" stroke-width="2" d="M21 12c0 1.2-4.03 6-9 6s-9-4.8-9-6c0-1.2 4.03-6 9-6s9 4.8 9 6Z"/>
                                         <path stroke="currentColor" stroke-width="2" d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"/>
                                     </svg>
         
-                                    <h6 class="cursor-pointer mx-auto w-fit hidden md:block hover:text-[#99B1B5] hover:underline">Ver produto</h6>
+                                    <h6 onclick="mostrarProduto()" class="cursor-pointer mx-auto w-fit hidden md:block hover:text-[#99B1B5] hover:underline">Ver produto</h6>
                                 </td>
                             </tr>
                             <tr>
                                 <td>Bife de pimenta</td>
                                 <td class="text-center">16.90€</td>
                                 <td class="text-center">
-                                    <svg class="cursor-pointer mx-auto h-fit w-fit hover:scale-120 md:hidden  dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="#F47D1B" viewBox="0 0 24 24">
+                                    <svg onclick="mostrarProduto()" class="cursor-pointer mx-auto h-fit w-fit hover:scale-120 md:hidden  dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="#F47D1B" viewBox="0 0 24 24">
                                         <path stroke="currentColor" stroke-width="2" d="M21 12c0 1.2-4.03 6-9 6s-9-4.8-9-6c0-1.2 4.03-6 9-6s9 4.8 9 6Z"/>
                                         <path stroke="currentColor" stroke-width="2" d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"/>
                                     </svg>
         
-                                    <h6 class="cursor-pointer mx-auto w-fit hidden md:block hover:text-[#99B1B5] hover:underline">Ver produto</h6>
+                                    <h6 onclick="mostrarProduto()" class="cursor-pointer mx-auto w-fit hidden md:block hover:text-[#99B1B5] hover:underline">Ver produto</h6>
                                 </td>
                             </tr>
                             <tr>
                                 <td>Bife de cogumelos</td>
                                 <td class="text-center">16.90€</td>
                                 <td class="text-center">
-                                    <svg class="cursor-pointer mx-auto h-fit w-fit hover:scale-120 md:hidden  dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="#F47D1B" viewBox="0 0 24 24">
+                                    <svg onclick="mostrarProduto()" class="cursor-pointer mx-auto h-fit w-fit hover:scale-120 md:hidden  dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="#F47D1B" viewBox="0 0 24 24">
                                         <path stroke="currentColor" stroke-width="2" d="M21 12c0 1.2-4.03 6-9 6s-9-4.8-9-6c0-1.2 4.03-6 9-6s9 4.8 9 6Z"/>
                                         <path stroke="currentColor" stroke-width="2" d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"/>
                                     </svg>
         
-                                    <h6 class="cursor-pointer mx-auto w-fit hidden md:block hover:text-[#99B1B5] hover:underline">Ver produto</h6>
+                                    <h6 onclick="mostrarProduto()" class="cursor-pointer mx-auto w-fit hidden md:block hover:text-[#99B1B5] hover:underline">Ver produto</h6>
                                 </td>
                             </tr>
                             <tr>
                                 <td>Bitoque de peru/frango (grelhado ou frito)</td>
                                 <td class="text-center">9.50€</td>
                                 <td class="text-center">
-                                    <svg class="cursor-pointer mx-auto h-fit w-fit hover:scale-120 md:hidden  dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="#F47D1B" viewBox="0 0 24 24">
+                                    <svg onclick="mostrarProduto()" class="cursor-pointer mx-auto h-fit w-fit hover:scale-120 md:hidden  dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="#F47D1B" viewBox="0 0 24 24">
                                         <path stroke="currentColor" stroke-width="2" d="M21 12c0 1.2-4.03 6-9 6s-9-4.8-9-6c0-1.2 4.03-6 9-6s9 4.8 9 6Z"/>
                                         <path stroke="currentColor" stroke-width="2" d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"/>
                                     </svg>
         
-                                    <h6 class="cursor-pointer mx-auto w-fit hidden md:block hover:text-[#99B1B5] hover:underline">Ver produto</h6>
+                                    <h6 onclick="mostrarProduto()" class="cursor-pointer mx-auto w-fit hidden md:block hover:text-[#99B1B5] hover:underline">Ver produto</h6>
                                 </td>
                             </tr>
                             <tr>
                                 <td>Bitoque de vaca</td>
                                 <td class="text-center">9.90€</td>
                                 <td class="text-center">
-                                    <svg class="cursor-pointer mx-auto h-fit w-fit hover:scale-120 md:hidden  dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="#F47D1B" viewBox="0 0 24 24">
+                                    <svg onclick="mostrarProduto()" class="cursor-pointer mx-auto h-fit w-fit hover:scale-120 md:hidden  dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="#F47D1B" viewBox="0 0 24 24">
                                         <path stroke="currentColor" stroke-width="2" d="M21 12c0 1.2-4.03 6-9 6s-9-4.8-9-6c0-1.2 4.03-6 9-6s9 4.8 9 6Z"/>
                                         <path stroke="currentColor" stroke-width="2" d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"/>
                                     </svg>
         
-                                    <h6 class="cursor-pointer mx-auto w-fit hidden md:block hover:text-[#99B1B5] hover:underline">Ver produto</h6>
+                                    <h6 onclick="mostrarProduto()" class="cursor-pointer mx-auto w-fit hidden md:block hover:text-[#99B1B5] hover:underline">Ver produto</h6>
                                 </td>
                             </tr>
                             <tr>
                                 <td>Bifinhos de frango/peru c/natas</td>
                                 <td class="text-center">9.50€</td>
                                 <td class="text-center">
-                                    <svg class="cursor-pointer mx-auto h-fit w-fit hover:scale-120 md:hidden  dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="#F47D1B" viewBox="0 0 24 24">
+                                    <svg onclick="mostrarProduto()" class="cursor-pointer mx-auto h-fit w-fit hover:scale-120 md:hidden  dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="#F47D1B" viewBox="0 0 24 24">
                                         <path stroke="currentColor" stroke-width="2" d="M21 12c0 1.2-4.03 6-9 6s-9-4.8-9-6c0-1.2 4.03-6 9-6s9 4.8 9 6Z"/>
                                         <path stroke="currentColor" stroke-width="2" d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"/>
                                     </svg>
         
-                                    <h6 class="cursor-pointer mx-auto w-fit hidden md:block hover:text-[#99B1B5] hover:underline">Ver produto</h6>
+                                    <h6 onclick="mostrarProduto()" class="cursor-pointer mx-auto w-fit hidden md:block hover:text-[#99B1B5] hover:underline">Ver produto</h6>
                                 </td>
                             </tr>
                         </tbody>
@@ -249,12 +258,12 @@
                                 <td>Salada de tomate</td>
                                 <td class="text-center">2.70€</td>
                                 <td class="text-center">
-                                    <svg class="cursor-pointer mx-auto h-fit w-fit hover:scale-120 md:hidden  dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="#F47D1B" viewBox="0 0 24 24">
+                                    <svg onclick="mostrarProduto()" class="cursor-pointer mx-auto h-fit w-fit hover:scale-120 md:hidden  dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="#F47D1B" viewBox="0 0 24 24">
                                         <path stroke="currentColor" stroke-width="2" d="M21 12c0 1.2-4.03 6-9 6s-9-4.8-9-6c0-1.2 4.03-6 9-6s9 4.8 9 6Z"/>
                                         <path stroke="currentColor" stroke-width="2" d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"/>
                                     </svg>
         
-                                    <h6 class="cursor-pointer mx-auto w-fit hidden md:block hover:text-[#99B1B5] hover:underline">Ver produto</h6>
+                                    <h6 onclick="mostrarProduto()" class="cursor-pointer mx-auto w-fit hidden md:block hover:text-[#99B1B5] hover:underline">Ver produto</h6>
                                 </td>
                                   
                             </tr>
@@ -262,60 +271,60 @@
                                 <td>Salada de alface</td>
                                 <td class="text-center">2.50€</td>
                                 <td class="text-center">
-                                    <svg class="cursor-pointer mx-auto h-fit w-fit hover:scale-120 md:hidden  dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="#F47D1B" viewBox="0 0 24 24">
+                                    <svg onclick="mostrarProduto()" class="cursor-pointer mx-auto h-fit w-fit hover:scale-120 md:hidden  dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="#F47D1B" viewBox="0 0 24 24">
                                         <path stroke="currentColor" stroke-width="2" d="M21 12c0 1.2-4.03 6-9 6s-9-4.8-9-6c0-1.2 4.03-6 9-6s9 4.8 9 6Z"/>
                                         <path stroke="currentColor" stroke-width="2" d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"/>
                                     </svg>
         
-                                    <h6 class="cursor-pointer mx-auto w-fit hidden md:block hover:text-[#99B1B5] hover:underline">Ver produto</h6>
+                                    <h6 onclick="mostrarProduto()" class="cursor-pointer mx-auto w-fit hidden md:block hover:text-[#99B1B5] hover:underline">Ver produto</h6>
                                 </td>
                             </tr>
                             <tr>
                                 <td>Salada de mista</td>
                                 <td class="text-center">2.80€</td>
                                 <td class="text-center">
-                                    <svg class="cursor-pointer mx-auto h-fit w-fit hover:scale-120 md:hidden  dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="#F47D1B" viewBox="0 0 24 24">
+                                    <svg onclick="mostrarProduto()" class="cursor-pointer mx-auto h-fit w-fit hover:scale-120 md:hidden  dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="#F47D1B" viewBox="0 0 24 24">
                                         <path stroke="currentColor" stroke-width="2" d="M21 12c0 1.2-4.03 6-9 6s-9-4.8-9-6c0-1.2 4.03-6 9-6s9 4.8 9 6Z"/>
                                         <path stroke="currentColor" stroke-width="2" d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"/>
                                     </svg>
         
-                                    <h6 class="cursor-pointer mx-auto w-fit hidden md:block hover:text-[#99B1B5] hover:underline">Ver produto</h6>
+                                    <h6 onclick="mostrarProduto()" class="cursor-pointer mx-auto w-fit hidden md:block hover:text-[#99B1B5] hover:underline">Ver produto</h6>
                                 </td>
                             </tr>
                             <tr>
                                 <td>Arroz</td>
                                 <td class="text-center">2.50€</td>
                                 <td class="text-center">
-                                    <svg class="cursor-pointer mx-auto h-fit w-fit hover:scale-120 md:hidden  dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="#F47D1B" viewBox="0 0 24 24">
+                                    <svg onclick="mostrarProduto()" class="cursor-pointer mx-auto h-fit w-fit hover:scale-120 md:hidden  dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="#F47D1B" viewBox="0 0 24 24">
                                         <path stroke="currentColor" stroke-width="2" d="M21 12c0 1.2-4.03 6-9 6s-9-4.8-9-6c0-1.2 4.03-6 9-6s9 4.8 9 6Z"/>
                                         <path stroke="currentColor" stroke-width="2" d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"/>
                                     </svg>
         
-                                    <h6 class="cursor-pointer mx-auto w-fit hidden md:block hover:text-[#99B1B5] hover:underline">Ver produto</h6>
+                                    <h6 onclick="mostrarProduto()" class="cursor-pointer mx-auto w-fit hidden md:block hover:text-[#99B1B5] hover:underline">Ver produto</h6>
                                 </td>
                             </tr>
                             <tr>
                                 <td>Legumes</td>
                                 <td class="text-center">4.50€</td>
                                 <td class="text-center">
-                                    <svg class="cursor-pointer mx-auto h-fit w-fit hover:scale-120 md:hidden  dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="#F47D1B" viewBox="0 0 24 24">
+                                    <svg onclick="mostrarProduto()" class="cursor-pointer mx-auto h-fit w-fit hover:scale-120 md:hidden  dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="#F47D1B" viewBox="0 0 24 24">
                                         <path stroke="currentColor" stroke-width="2" d="M21 12c0 1.2-4.03 6-9 6s-9-4.8-9-6c0-1.2 4.03-6 9-6s9 4.8 9 6Z"/>
                                         <path stroke="currentColor" stroke-width="2" d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"/>
                                     </svg>
         
-                                    <h6 class="cursor-pointer mx-auto w-fit hidden md:block hover:text-[#99B1B5] hover:underline">Ver produto</h6>
+                                    <h6 onclick="mostrarProduto()" class="cursor-pointer mx-auto w-fit hidden md:block hover:text-[#99B1B5] hover:underline">Ver produto</h6>
                                 </td>
                             </tr>
                             <tr>
                                 <td>Batata extra</td>
                                 <td class="text-center">2.00€</td>
                                 <td class="text-center">
-                                    <svg class="cursor-pointer mx-auto h-fit w-fit hover:scale-120 md:hidden  dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="#F47D1B" viewBox="0 0 24 24">
+                                    <svg onclick="mostrarProduto()" class="cursor-pointer mx-auto h-fit w-fit hover:scale-120 md:hidden  dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="#F47D1B" viewBox="0 0 24 24">
                                         <path stroke="currentColor" stroke-width="2" d="M21 12c0 1.2-4.03 6-9 6s-9-4.8-9-6c0-1.2 4.03-6 9-6s9 4.8 9 6Z"/>
                                         <path stroke="currentColor" stroke-width="2" d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"/>
                                     </svg>
         
-                                    <h6 class="cursor-pointer mx-auto w-fit hidden md:block hover:text-[#99B1B5] hover:underline">Ver produto</h6>
+                                    <h6 onclick="mostrarProduto()" class="cursor-pointer mx-auto w-fit hidden md:block hover:text-[#99B1B5] hover:underline">Ver produto</h6>
                                 </td>
                             </tr>
                         </tbody>
@@ -335,12 +344,12 @@
                                 <td>Campari</td>
                                 <td class="text-center">4.00€</td>
                                 <td class="text-center">
-                                    <svg class="cursor-pointer mx-auto h-fit w-fit hover:scale-120 md:hidden  dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="#F47D1B" viewBox="0 0 24 24">
+                                    <svg onclick="mostrarProduto()" class="cursor-pointer mx-auto h-fit w-fit hover:scale-120 md:hidden  dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="#F47D1B" viewBox="0 0 24 24">
                                         <path stroke="currentColor" stroke-width="2" d="M21 12c0 1.2-4.03 6-9 6s-9-4.8-9-6c0-1.2 4.03-6 9-6s9 4.8 9 6Z"/>
                                         <path stroke="currentColor" stroke-width="2" d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"/>
                                     </svg>
         
-                                    <h6 class="cursor-pointer mx-auto w-fit hidden md:block hover:text-[#99B1B5] hover:underline">Ver produto</h6>
+                                    <h6 onclick="mostrarProduto()" class="cursor-pointer mx-auto w-fit hidden md:block hover:text-[#99B1B5] hover:underline">Ver produto</h6>
                                 </td>
                                   
                             </tr>
@@ -348,72 +357,72 @@
                                 <td>Ricard</td>
                                 <td class="text-center">4.00€</td>
                                 <td class="text-center">
-                                    <svg class="cursor-pointer mx-auto h-fit w-fit hover:scale-120 md:hidden  dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="#F47D1B" viewBox="0 0 24 24">
+                                    <svg onclick="mostrarProduto()" class="cursor-pointer mx-auto h-fit w-fit hover:scale-120 md:hidden  dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="#F47D1B" viewBox="0 0 24 24">
                                         <path stroke="currentColor" stroke-width="2" d="M21 12c0 1.2-4.03 6-9 6s-9-4.8-9-6c0-1.2 4.03-6 9-6s9 4.8 9 6Z"/>
                                         <path stroke="currentColor" stroke-width="2" d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"/>
                                     </svg>
         
-                                    <h6 class="cursor-pointer mx-auto w-fit hidden md:block hover:text-[#99B1B5] hover:underline">Ver produto</h6>
+                                    <h6 onclick="mostrarProduto()" class="cursor-pointer mx-auto w-fit hidden md:block hover:text-[#99B1B5] hover:underline">Ver produto</h6>
                                 </td>
                             </tr>
                             <tr>
                                 <td>Gin Gordons</td>
                                 <td class="text-center">6.00€</td>
                                 <td class="text-center">
-                                    <svg class="cursor-pointer mx-auto h-fit w-fit hover:scale-120 md:hidden  dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="#F47D1B" viewBox="0 0 24 24">
+                                    <svg onclick="mostrarProduto()" class="cursor-pointer mx-auto h-fit w-fit hover:scale-120 md:hidden  dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="#F47D1B" viewBox="0 0 24 24">
                                         <path stroke="currentColor" stroke-width="2" d="M21 12c0 1.2-4.03 6-9 6s-9-4.8-9-6c0-1.2 4.03-6 9-6s9 4.8 9 6Z"/>
                                         <path stroke="currentColor" stroke-width="2" d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"/>
                                     </svg>
         
-                                    <h6 class="cursor-pointer mx-auto w-fit hidden md:block hover:text-[#99B1B5] hover:underline">Ver produto</h6>
+                                    <h6 onclick="mostrarProduto()" class="cursor-pointer mx-auto w-fit hidden md:block hover:text-[#99B1B5] hover:underline">Ver produto</h6>
                                 </td>
                             </tr>
                             <tr>
                                 <td>Rum</td>
                                 <td class="text-center">4.00€</td>
                                 <td class="text-center">
-                                    <svg class="cursor-pointer mx-auto h-fit w-fit hover:scale-120 md:hidden  dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="#F47D1B" viewBox="0 0 24 24">
+                                    <svg onclick="mostrarProduto()" class="cursor-pointer mx-auto h-fit w-fit hover:scale-120 md:hidden  dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="#F47D1B" viewBox="0 0 24 24">
                                         <path stroke="currentColor" stroke-width="2" d="M21 12c0 1.2-4.03 6-9 6s-9-4.8-9-6c0-1.2 4.03-6 9-6s9 4.8 9 6Z"/>
                                         <path stroke="currentColor" stroke-width="2" d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"/>
                                     </svg>
         
-                                    <h6 class="cursor-pointer mx-auto w-fit hidden md:block hover:text-[#99B1B5] hover:underline">Ver produto</h6>
+                                    <h6 onclick="mostrarProduto()" class="cursor-pointer mx-auto w-fit hidden md:block hover:text-[#99B1B5] hover:underline">Ver produto</h6>
                                 </td>
                             </tr>
                             <tr>
                                 <td>Vodka</td>
                                 <td class="text-center">4.00€</td>
                                 <td class="text-center">
-                                    <svg class="cursor-pointer mx-auto h-fit w-fit hover:scale-120 md:hidden  dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="#F47D1B" viewBox="0 0 24 24">
+                                    <svg onclick="mostrarProduto()" class="cursor-pointer mx-auto h-fit w-fit hover:scale-120 md:hidden  dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="#F47D1B" viewBox="0 0 24 24">
                                         <path stroke="currentColor" stroke-width="2" d="M21 12c0 1.2-4.03 6-9 6s-9-4.8-9-6c0-1.2 4.03-6 9-6s9 4.8 9 6Z"/>
                                         <path stroke="currentColor" stroke-width="2" d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"/>
                                     </svg>
         
-                                    <h6 class="cursor-pointer mx-auto w-fit hidden md:block hover:text-[#99B1B5] hover:underline">Ver produto</h6>
+                                    <h6 onclick="mostrarProduto()" class="cursor-pointer mx-auto w-fit hidden md:block hover:text-[#99B1B5] hover:underline">Ver produto</h6>
                                 </td>
                             </tr>
                             <tr>
                                 <td>Martini</td>
                                 <td class="text-center">3.50€</td>
                                 <td class="text-center">
-                                    <svg class="cursor-pointer mx-auto h-fit w-fit hover:scale-120 md:hidden  dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="#F47D1B" viewBox="0 0 24 24">
+                                    <svg onclick="mostrarProduto()" class="cursor-pointer mx-auto h-fit w-fit hover:scale-120 md:hidden  dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="#F47D1B" viewBox="0 0 24 24">
                                         <path stroke="currentColor" stroke-width="2" d="M21 12c0 1.2-4.03 6-9 6s-9-4.8-9-6c0-1.2 4.03-6 9-6s9 4.8 9 6Z"/>
                                         <path stroke="currentColor" stroke-width="2" d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"/>
                                     </svg>
         
-                                    <h6 class="cursor-pointer mx-auto w-fit hidden md:block hover:text-[#99B1B5] hover:underline">Ver produto</h6>
+                                    <h6 onclick="mostrarProduto()" class="cursor-pointer mx-auto w-fit hidden md:block hover:text-[#99B1B5] hover:underline">Ver produto</h6>
                                 </td>
                             </tr>
                             <tr>
                                 <td>Porto Seco</td>
                                 <td class="text-center">3.50€</td>
                                 <td class="text-center">
-                                    <svg class="cursor-pointer mx-auto h-fit w-fit hover:scale-120 md:hidden  dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="#F47D1B" viewBox="0 0 24 24">
+                                    <svg onclick="mostrarProduto()" class="cursor-pointer mx-auto h-fit w-fit hover:scale-120 md:hidden  dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="#F47D1B" viewBox="0 0 24 24">
                                         <path stroke="currentColor" stroke-width="2" d="M21 12c0 1.2-4.03 6-9 6s-9-4.8-9-6c0-1.2 4.03-6 9-6s9 4.8 9 6Z"/>
                                         <path stroke="currentColor" stroke-width="2" d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"/>
                                     </svg>
         
-                                    <h6 class="cursor-pointer mx-auto w-fit hidden md:block hover:text-[#99B1B5] hover:underline">Ver produto</h6>
+                                    <h6 onclick="mostrarProduto()" class="cursor-pointer mx-auto w-fit hidden md:block hover:text-[#99B1B5] hover:underline">Ver produto</h6>
                                 </td>
                             </tr>
                         </tbody>
@@ -430,12 +439,12 @@
                                 <td>Imperial</td>
                                 <td class="text-center">1.70€</td>
                                 <td class="text-center">
-                                    <svg class="cursor-pointer cursor-pointer mx-auto h-fit w-fit hover:scale-120 md:hidden  dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="#F47D1B" viewBox="0 0 24 24">
+                                    <svg onclick="mostrarProduto()" class="cursor-pointer cursor-pointer mx-auto h-fit w-fit hover:scale-120 md:hidden  dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="#F47D1B" viewBox="0 0 24 24">
                                         <path stroke="currentColor" stroke-width="2" d="M21 12c0 1.2-4.03 6-9 6s-9-4.8-9-6c0-1.2 4.03-6 9-6s9 4.8 9 6Z"/>
                                         <path stroke="currentColor" stroke-width="2" d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"/>
                                     </svg>
         
-                                    <h6 class="cursor-pointer mx-auto w-fit hidden md:block hover:text-[#99B1B5] hover:underline">Ver produto</h6>
+                                    <h6 onclick="mostrarProduto()" class="cursor-pointer mx-auto w-fit hidden md:block hover:text-[#99B1B5] hover:underline">Ver produto</h6>
                                 </td>
                                   
                             </tr>
@@ -443,48 +452,48 @@
                                 <td>Caneca</td>
                                 <td class="text-center">4.20€</td>
                                 <td class="text-center">
-                                    <svg class="cursor-pointer cursor-pointer mx-auto h-fit w-fit hover:scale-120 md:hidden  dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="#F47D1B" viewBox="0 0 24 24">
+                                    <svg onclick="mostrarProduto()" class="cursor-pointer cursor-pointer mx-auto h-fit w-fit hover:scale-120 md:hidden  dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="#F47D1B" viewBox="0 0 24 24">
                                         <path stroke="currentColor" stroke-width="2" d="M21 12c0 1.2-4.03 6-9 6s-9-4.8-9-6c0-1.2 4.03-6 9-6s9 4.8 9 6Z"/>
                                         <path stroke="currentColor" stroke-width="2" d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"/>
                                     </svg>
         
-                                    <h6 class="cursor-pointer mx-auto w-fit hidden md:block hover:text-[#99B1B5] hover:underline">Ver produto</h6>
+                                    <h6 onclick="mostrarProduto()" class="cursor-pointer mx-auto w-fit hidden md:block hover:text-[#99B1B5] hover:underline">Ver produto</h6>
                                 </td>
                             </tr>
                             <tr>
                                 <td>Cerveja s/ álcool</td>
                                 <td class="text-center">1.95€</td>
                                 <td class="text-center">
-                                    <svg class="cursor-pointer cursor-pointer mx-auto h-fit w-fit hover:scale-120 md:hidden  dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="#F47D1B" viewBox="0 0 24 24">
+                                    <svg onclick="mostrarProduto()" class="cursor-pointer cursor-pointer mx-auto h-fit w-fit hover:scale-120 md:hidden  dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="#F47D1B" viewBox="0 0 24 24">
                                         <path stroke="currentColor" stroke-width="2" d="M21 12c0 1.2-4.03 6-9 6s-9-4.8-9-6c0-1.2 4.03-6 9-6s9 4.8 9 6Z"/>
                                         <path stroke="currentColor" stroke-width="2" d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"/>
                                     </svg>
         
-                                    <h6 class="cursor-pointer mx-auto w-fit hidden md:block hover:text-[#99B1B5] hover:underline">Ver produto</h6>
+                                    <h6 onclick="mostrarProduto()" class="cursor-pointer mx-auto w-fit hidden md:block hover:text-[#99B1B5] hover:underline">Ver produto</h6>
                                 </td>
                             </tr>
                             <tr>
                                 <td>Sagres</td>
                                 <td class="text-center">1.70€</td>
                                 <td class="text-center">
-                                    <svg class="cursor-pointer cursor-pointer mx-auto h-fit w-fit hover:scale-120 md:hidden  dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="#F47D1B" viewBox="0 0 24 24">
+                                    <svg onclick="mostrarProduto()" class="cursor-pointer cursor-pointer mx-auto h-fit w-fit hover:scale-120 md:hidden  dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="#F47D1B" viewBox="0 0 24 24">
                                         <path stroke="currentColor" stroke-width="2" d="M21 12c0 1.2-4.03 6-9 6s-9-4.8-9-6c0-1.2 4.03-6 9-6s9 4.8 9 6Z"/>
                                         <path stroke="currentColor" stroke-width="2" d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"/>
                                     </svg>
         
-                                    <h6 class="cursor-pointer mx-auto w-fit hidden md:block hover:text-[#99B1B5] hover:underline">Ver produto</h6>
+                                    <h6 onclick="mostrarProduto()" class="cursor-pointer mx-auto w-fit hidden md:block hover:text-[#99B1B5] hover:underline">Ver produto</h6>
                                 </td>
                             </tr>
                             <tr>
                                 <td>Erdinger garrafa</td>
                                 <td class="text-center">4.50€</td>
                                 <td class="text-center">
-                                    <svg class="cursor-pointer cursor-pointer mx-auto h-fit w-fit hover:scale-120 md:hidden  dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="#F47D1B" viewBox="0 0 24 24">
+                                    <svg onclick="mostrarProduto()" class="cursor-pointer cursor-pointer mx-auto h-fit w-fit hover:scale-120 md:hidden  dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="#F47D1B" viewBox="0 0 24 24">
                                         <path stroke="currentColor" stroke-width="2" d="M21 12c0 1.2-4.03 6-9 6s-9-4.8-9-6c0-1.2 4.03-6 9-6s9 4.8 9 6Z"/>
                                         <path stroke="currentColor" stroke-width="2" d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"/>
                                     </svg>
         
-                                    <h6 class="cursor-pointer mx-auto w-fit hidden md:block hover:text-[#99B1B5] hover:underline">Ver produto</h6>
+                                    <h6 onclick="mostrarProduto()" class="cursor-pointer mx-auto w-fit hidden md:block hover:text-[#99B1B5] hover:underline">Ver produto</h6>
                                 </td>
                             </tr>
                         </tbody>
@@ -501,12 +510,12 @@
                                 <td>Café</td>
                                 <td class="text-center">1.00€</td>
                                 <td class="text-center">
-                                    <svg class="cursor-pointer mx-auto h-fit w-fit hover:scale-120 md:hidden  dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="#F47D1B" viewBox="0 0 24 24">
+                                    <svg onclick="mostrarProduto()" class="cursor-pointer mx-auto h-fit w-fit hover:scale-120 md:hidden  dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="#F47D1B" viewBox="0 0 24 24">
                                         <path stroke="currentColor" stroke-width="2" d="M21 12c0 1.2-4.03 6-9 6s-9-4.8-9-6c0-1.2 4.03-6 9-6s9 4.8 9 6Z"/>
                                         <path stroke="currentColor" stroke-width="2" d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"/>
                                     </svg>
         
-                                    <h6 class="cursor-pointer mx-auto w-fit hidden md:block hover:text-[#99B1B5] hover:underline">Ver produto</h6>
+                                    <h6 onclick="mostrarProduto()" class="cursor-pointer mx-auto w-fit hidden md:block hover:text-[#99B1B5] hover:underline">Ver produto</h6>
                                 </td>
                                   
                             </tr>
@@ -514,48 +523,48 @@
                                 <td>Descafeinado</td>
                                 <td class="text-center">1.00€</td>
                                 <td class="text-center">
-                                    <svg class="mx-auto h-fit w-fit hover:scale-120 md:hidden  dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="#F47D1B" viewBox="0 0 24 24">
+                                    <svg onclick="mostrarProduto()" class="mx-auto h-fit w-fit hover:scale-120 md:hidden  dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="#F47D1B" viewBox="0 0 24 24">
                                         <path stroke="currentColor" stroke-width="2" d="M21 12c0 1.2-4.03 6-9 6s-9-4.8-9-6c0-1.2 4.03-6 9-6s9 4.8 9 6Z"/>
                                         <path stroke="currentColor" stroke-width="2" d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"/>
                                     </svg>
         
-                                    <h6 class="cursor-pointer mx-auto w-fit hidden md:block hover:text-[#99B1B5] hover:underline">Ver produto</h6>
+                                    <h6 onclick="mostrarProduto()" class="cursor-pointer mx-auto w-fit hidden md:block hover:text-[#99B1B5] hover:underline">Ver produto</h6>
                                 </td>
                             </tr>
                             <tr>
                                 <td>Café Duplo</td>
                                 <td class="text-center">1.80€</td>
                                 <td class="text-center">
-                                    <svg class="cursor-pointer mx-auto h-fit w-fit hover:scale-120 md:hidden  dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="#F47D1B" viewBox="0 0 24 24">
+                                    <svg onclick="mostrarProduto()" class="cursor-pointer mx-auto h-fit w-fit hover:scale-120 md:hidden  dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="#F47D1B" viewBox="0 0 24 24">
                                         <path stroke="currentColor" stroke-width="2" d="M21 12c0 1.2-4.03 6-9 6s-9-4.8-9-6c0-1.2 4.03-6 9-6s9 4.8 9 6Z"/>
                                         <path stroke="currentColor" stroke-width="2" d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"/>
                                     </svg>
         
-                                    <h6 class="cursor-pointer mx-auto w-fit hidden md:block hover:text-[#99B1B5] hover:underline">Ver produto</h6>
+                                    <h6 onclick="mostrarProduto()" class="cursor-pointer mx-auto w-fit hidden md:block hover:text-[#99B1B5] hover:underline">Ver produto</h6>
                                 </td>
                             </tr>
                             <tr>
                                 <td>Capuccino</td>
                                 <td class="text-center">2.00€</td>
                                 <td class="text-center">
-                                    <svg class="cursor-pointer mx-auto h-fit w-fit hover:scale-120 md:hidden  dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="#F47D1B" viewBox="0 0 24 24">
+                                    <svg onclick="mostrarProduto()" class="cursor-pointer mx-auto h-fit w-fit hover:scale-120 md:hidden  dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="#F47D1B" viewBox="0 0 24 24">
                                         <path stroke="currentColor" stroke-width="2" d="M21 12c0 1.2-4.03 6-9 6s-9-4.8-9-6c0-1.2 4.03-6 9-6s9 4.8 9 6Z"/>
                                         <path stroke="currentColor" stroke-width="2" d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"/>
                                     </svg>
         
-                                    <h6 class="cursor-pointer mx-auto w-fit hidden md:block hover:text-[#99B1B5] hover:underline">Ver produto</h6>
+                                    <h6 onclick="mostrarProduto()" class="cursor-pointer mx-auto w-fit hidden md:block hover:text-[#99B1B5] hover:underline">Ver produto</h6>
                                 </td>
                             </tr>
                             <tr>
                                 <td>Chá</td>
                                 <td class="text-center">1.60€</td>
                                 <td class="text-center">
-                                    <svg class="cursor-pointer mx-auto h-fit w-fit hover:scale-120 md:hidden  dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="#F47D1B" viewBox="0 0 24 24">
+                                    <svg onclick="mostrarProduto()" class="cursor-pointer mx-auto h-fit w-fit hover:scale-120 md:hidden  dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="#F47D1B" viewBox="0 0 24 24">
                                         <path stroke="currentColor" stroke-width="2" d="M21 12c0 1.2-4.03 6-9 6s-9-4.8-9-6c0-1.2 4.03-6 9-6s9 4.8 9 6Z"/>
                                         <path stroke="currentColor" stroke-width="2" d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"/>
                                     </svg>
         
-                                    <h6 class="cursor-pointer mx-auto w-fit hidden md:block hover:text-[#99B1B5] hover:underline">Ver produto</h6>
+                                    <h6 onclick="mostrarProduto()" class="cursor-pointer mx-auto w-fit hidden md:block hover:text-[#99B1B5] hover:underline">Ver produto</h6>
                                 </td>
                             </tr>
                         </tbody>
@@ -575,60 +584,60 @@
                                 <td class="indent-3">Cutty Sark</td>
                                 <td class="text-center">3.90€</td>
                                 <td class="text-center">
-                                    <svg class="cursor-pointer mx-auto h-fit w-fit hover:scale-120 md:hidden  dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="#F47D1B" viewBox="0 0 24 24">
+                                    <svg onclick="mostrarProduto()" class="cursor-pointer mx-auto h-fit w-fit hover:scale-120 md:hidden  dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="#F47D1B" viewBox="0 0 24 24">
                                         <path stroke="currentColor" stroke-width="2" d="M21 12c0 1.2-4.03 6-9 6s-9-4.8-9-6c0-1.2 4.03-6 9-6s9 4.8 9 6Z"/>
                                         <path stroke="currentColor" stroke-width="2" d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"/>
                                     </svg>
         
-                                    <h6 class="cursor-pointer mx-auto w-fit hidden md:block hover:text-[#99B1B5] hover:underline">Ver produto</h6>
+                                    <h6 onclick="mostrarProduto()" class="cursor-pointer mx-auto w-fit hidden md:block hover:text-[#99B1B5] hover:underline">Ver produto</h6>
                                 </td>
                             </tr>
                             <tr>
                                 <td class="indent-3">Johnnie Walker</td>
                                 <td class="text-center">3.90€</td>
                                 <td class="text-center">
-                                    <svg class="cursor-pointer mx-auto h-fit w-fit hover:scale-120 md:hidden  dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="#F47D1B" viewBox="0 0 24 24">
+                                    <svg onclick="mostrarProduto()" class="cursor-pointer mx-auto h-fit w-fit hover:scale-120 md:hidden  dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="#F47D1B" viewBox="0 0 24 24">
                                         <path stroke="currentColor" stroke-width="2" d="M21 12c0 1.2-4.03 6-9 6s-9-4.8-9-6c0-1.2 4.03-6 9-6s9 4.8 9 6Z"/>
                                         <path stroke="currentColor" stroke-width="2" d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"/>
                                     </svg>
         
-                                    <h6 class="cursor-pointer mx-auto w-fit hidden md:block hover:text-[#99B1B5] hover:underline">Ver produto</h6>
+                                    <h6 onclick="mostrarProduto()" class="cursor-pointer mx-auto w-fit hidden md:block hover:text-[#99B1B5] hover:underline">Ver produto</h6>
                                 </td>
                             </tr>
                             <tr>
                                 <td class="indent-3">Jameson</td>
                                 <td class="text-center">4.00€</td>
                                 <td class="text-center">
-                                    <svg class="cursor-pointer mx-auto h-fit w-fit hover:scale-120 md:hidden  dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="#F47D1B" viewBox="0 0 24 24">
+                                    <svg onclick="mostrarProduto()" class="cursor-pointer mx-auto h-fit w-fit hover:scale-120 md:hidden  dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="#F47D1B" viewBox="0 0 24 24">
                                         <path stroke="currentColor" stroke-width="2" d="M21 12c0 1.2-4.03 6-9 6s-9-4.8-9-6c0-1.2 4.03-6 9-6s9 4.8 9 6Z"/>
                                         <path stroke="currentColor" stroke-width="2" d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"/>
                                     </svg>
         
-                                    <h6 class="cursor-pointer mx-auto w-fit hidden md:block hover:text-[#99B1B5] hover:underline">Ver produto</h6>
+                                    <h6 onclick="mostrarProduto()" class="cursor-pointer mx-auto w-fit hidden md:block hover:text-[#99B1B5] hover:underline">Ver produto</h6>
                                 </td>
                             </tr>
                             <tr>
                                 <td class="indent-3">J.B.</td>
                                 <td class="text-center">3.90€</td>
                                 <td class="text-center">
-                                    <svg class="cursor-pointer mx-auto h-fit w-fit hover:scale-120 md:hidden  dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="#F47D1B" viewBox="0 0 24 24">
+                                    <svg onclick="mostrarProduto()" class="cursor-pointer mx-auto h-fit w-fit hover:scale-120 md:hidden  dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="#F47D1B" viewBox="0 0 24 24">
                                         <path stroke="currentColor" stroke-width="2" d="M21 12c0 1.2-4.03 6-9 6s-9-4.8-9-6c0-1.2 4.03-6 9-6s9 4.8 9 6Z"/>
                                         <path stroke="currentColor" stroke-width="2" d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"/>
                                     </svg>
         
-                                    <h6 class="cursor-pointer mx-auto w-fit hidden md:block hover:text-[#99B1B5] hover:underline">Ver produto</h6>
+                                    <h6 onclick="mostrarProduto()" class="cursor-pointer mx-auto w-fit hidden md:block hover:text-[#99B1B5] hover:underline">Ver produto</h6>
                                 </td>
                             </tr>
                             <tr>
                                 <td class="indent-3">1/2 Whisky</td>
                                 <td class="text-center">2.40€</td>
                                 <td class="text-center">
-                                    <svg class="cursor-pointer mx-auto h-fit w-fit hover:scale-120 md:hidden  dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="#F47D1B" viewBox="0 0 24 24">
+                                    <svg onclick="mostrarProduto()" class="cursor-pointer mx-auto h-fit w-fit hover:scale-120 md:hidden  dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="#F47D1B" viewBox="0 0 24 24">
                                         <path stroke="currentColor" stroke-width="2" d="M21 12c0 1.2-4.03 6-9 6s-9-4.8-9-6c0-1.2 4.03-6 9-6s9 4.8 9 6Z"/>
                                         <path stroke="currentColor" stroke-width="2" d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"/>
                                     </svg>
         
-                                    <h6 class="cursor-pointer mx-auto w-fit hidden md:block hover:text-[#99B1B5] hover:underline">Ver produto</h6>
+                                    <h6 onclick="mostrarProduto()" class="cursor-pointer mx-auto w-fit hidden md:block hover:text-[#99B1B5] hover:underline">Ver produto</h6>
                                 </td>
                             </tr>
 
@@ -639,48 +648,48 @@
                                 <td class="indent-3">Logan</td>
                                 <td class="text-center">4.50€</td>
                                 <td class="text-center">
-                                    <svg class="cursor-pointer mx-auto h-fit w-fit hover:scale-120 md:hidden  dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="#F47D1B" viewBox="0 0 24 24">
+                                    <svg onclick="mostrarProduto()" class="cursor-pointer mx-auto h-fit w-fit hover:scale-120 md:hidden  dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="#F47D1B" viewBox="0 0 24 24">
                                         <path stroke="currentColor" stroke-width="2" d="M21 12c0 1.2-4.03 6-9 6s-9-4.8-9-6c0-1.2 4.03-6 9-6s9 4.8 9 6Z"/>
                                         <path stroke="currentColor" stroke-width="2" d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"/>
                                     </svg>
         
-                                    <h6 class="cursor-pointer mx-auto w-fit hidden md:block hover:text-[#99B1B5] hover:underline">Ver produto</h6>
+                                    <h6 onclick="mostrarProduto()" class="cursor-pointer mx-auto w-fit hidden md:block hover:text-[#99B1B5] hover:underline">Ver produto</h6>
                                 </td>
                             </tr>
                             <tr>
                                 <td class="indent-3">J.B</td>
                                 <td class="text-center">4.50€</td>
                                 <td class="text-center">
-                                    <svg class="cursor-pointer mx-auto h-fit w-fit hover:scale-120 md:hidden  dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="#F47D1B" viewBox="0 0 24 24">
+                                    <svg onclick="mostrarProduto()" class="cursor-pointer mx-auto h-fit w-fit hover:scale-120 md:hidden  dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="#F47D1B" viewBox="0 0 24 24">
                                         <path stroke="currentColor" stroke-width="2" d="M21 12c0 1.2-4.03 6-9 6s-9-4.8-9-6c0-1.2 4.03-6 9-6s9 4.8 9 6Z"/>
                                         <path stroke="currentColor" stroke-width="2" d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"/>
                                     </svg>
         
-                                    <h6 class="cursor-pointer mx-auto w-fit hidden md:block hover:text-[#99B1B5] hover:underline">Ver produto</h6>
+                                    <h6 onclick="mostrarProduto()" class="cursor-pointer mx-auto w-fit hidden md:block hover:text-[#99B1B5] hover:underline">Ver produto</h6>
                                 </td>
                             </tr>
                             <tr>
                                 <td class="indent-3">Johnnie Walker</td>
                                 <td class="text-center">4.50€</td>
                                 <td class="text-center">
-                                    <svg class="cursor-pointer mx-auto h-fit w-fit hover:scale-120 md:hidden  dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="#F47D1B" viewBox="0 0 24 24">
+                                    <svg onclick="mostrarProduto()" class="cursor-pointer mx-auto h-fit w-fit hover:scale-120 md:hidden  dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="#F47D1B" viewBox="0 0 24 24">
                                         <path stroke="currentColor" stroke-width="2" d="M21 12c0 1.2-4.03 6-9 6s-9-4.8-9-6c0-1.2 4.03-6 9-6s9 4.8 9 6Z"/>
                                         <path stroke="currentColor" stroke-width="2" d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"/>
                                     </svg>
         
-                                    <h6 class="cursor-pointer mx-auto w-fit hidden md:block hover:text-[#99B1B5] hover:underline">Ver produto</h6>
+                                    <h6 onclick="mostrarProduto()" class="cursor-pointer mx-auto w-fit hidden md:block hover:text-[#99B1B5] hover:underline">Ver produto</h6>
                                 </td>
                             </tr>
                             <tr>
                                 <td class="indent-3">1/2 Whisky</td>
                                 <td class="text-center">2.40€</td>
                                 <td class="text-center">
-                                    <svg class="cursor-pointer mx-auto h-fit w-fit hover:scale-120 md:hidden  dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="#F47D1B" viewBox="0 0 24 24">
+                                    <svg onclick="mostrarProduto()" class="cursor-pointer mx-auto h-fit w-fit hover:scale-120 md:hidden  dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="#F47D1B" viewBox="0 0 24 24">
                                         <path stroke="currentColor" stroke-width="2" d="M21 12c0 1.2-4.03 6-9 6s-9-4.8-9-6c0-1.2 4.03-6 9-6s9 4.8 9 6Z"/>
                                         <path stroke="currentColor" stroke-width="2" d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"/>
                                     </svg>
         
-                                    <h6 class="cursor-pointer mx-auto w-fit hidden md:block hover:text-[#99B1B5] hover:underline">Ver produto</h6>
+                                    <h6 onclick="mostrarProduto()" class="cursor-pointer mx-auto w-fit hidden md:block hover:text-[#99B1B5] hover:underline">Ver produto</h6>
                                 </td>
                             </tr>
 
@@ -691,60 +700,60 @@
                                 <td class="indent-3">Chancella</td>
                                 <td class="text-center">4.00€</td>
                                 <td class="text-center">
-                                    <svg class="cursor-pointer mx-auto h-fit w-fit hover:scale-120 md:hidden  dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="#F47D1B" viewBox="0 0 24 24">
+                                    <svg onclick="mostrarProduto()" class="cursor-pointer mx-auto h-fit w-fit hover:scale-120 md:hidden  dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="#F47D1B" viewBox="0 0 24 24">
                                         <path stroke="currentColor" stroke-width="2" d="M21 12c0 1.2-4.03 6-9 6s-9-4.8-9-6c0-1.2 4.03-6 9-6s9 4.8 9 6Z"/>
                                         <path stroke="currentColor" stroke-width="2" d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"/>
                                     </svg>
         
-                                    <h6 class="cursor-pointer mx-auto w-fit hidden md:block hover:text-[#99B1B5] hover:underline">Ver produto</h6>
+                                    <h6 onclick="mostrarProduto()" class="cursor-pointer mx-auto w-fit hidden md:block hover:text-[#99B1B5] hover:underline">Ver produto</h6>
                                 </td>
                             </tr>
                             <tr>
                                 <td class="indent-3">Aliança Velha</td>
                                 <td class="text-center">4.00€</td>
                                 <td class="text-center">
-                                    <svg class="cursor-pointer mx-auto h-fit w-fit hover:scale-120 md:hidden  dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="#F47D1B" viewBox="0 0 24 24">
+                                    <svg onclick="mostrarProduto()" class="cursor-pointer mx-auto h-fit w-fit hover:scale-120 md:hidden  dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="#F47D1B" viewBox="0 0 24 24">
                                         <path stroke="currentColor" stroke-width="2" d="M21 12c0 1.2-4.03 6-9 6s-9-4.8-9-6c0-1.2 4.03-6 9-6s9 4.8 9 6Z"/>
                                         <path stroke="currentColor" stroke-width="2" d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"/>
                                     </svg>
         
-                                    <h6 class="cursor-pointer mx-auto w-fit hidden md:block hover:text-[#99B1B5] hover:underline">Ver produto</h6>
+                                    <h6 onclick="mostrarProduto()" class="cursor-pointer mx-auto w-fit hidden md:block hover:text-[#99B1B5] hover:underline">Ver produto</h6>
                                 </td>
                             </tr>
                             <tr>
                                 <td class="indent-3">CRF</td>
                                 <td class="text-center">4.00€</td>
                                 <td class="text-center">
-                                    <svg class="cursor-pointer mx-auto h-fit w-fit hover:scale-120 md:hidden  dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="#F47D1B" viewBox="0 0 24 24">
+                                    <svg onclick="mostrarProduto()" class="cursor-pointer mx-auto h-fit w-fit hover:scale-120 md:hidden  dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="#F47D1B" viewBox="0 0 24 24">
                                         <path stroke="currentColor" stroke-width="2" d="M21 12c0 1.2-4.03 6-9 6s-9-4.8-9-6c0-1.2 4.03-6 9-6s9 4.8 9 6Z"/>
                                         <path stroke="currentColor" stroke-width="2" d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"/>
                                     </svg>
         
-                                    <h6 class="cursor-pointer mx-auto w-fit hidden md:block hover:text-[#99B1B5] hover:underline">Ver produto</h6>
+                                    <h6 onclick="mostrarProduto()" class="cursor-pointer mx-auto w-fit hidden md:block hover:text-[#99B1B5] hover:underline">Ver produto</h6>
                                 </td>
                             </tr>
                             <tr>
                                 <td class="indent-3">Medronho</td>
                                 <td class="text-center">4.00€</td>
                                 <td class="text-center">
-                                    <svg class="cursor-pointer mx-auto h-fit w-fit hover:scale-120 md:hidden  dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="#F47D1B" viewBox="0 0 24 24">
+                                    <svg onclick="mostrarProduto()" class="cursor-pointer mx-auto h-fit w-fit hover:scale-120 md:hidden  dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="#F47D1B" viewBox="0 0 24 24">
                                         <path stroke="currentColor" stroke-width="2" d="M21 12c0 1.2-4.03 6-9 6s-9-4.8-9-6c0-1.2 4.03-6 9-6s9 4.8 9 6Z"/>
                                         <path stroke="currentColor" stroke-width="2" d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"/>
                                     </svg>
         
-                                    <h6 class="cursor-pointer mx-auto w-fit hidden md:block hover:text-[#99B1B5] hover:underline">Ver produto</h6>
+                                    <h6 onclick="mostrarProduto()" class="cursor-pointer mx-auto w-fit hidden md:block hover:text-[#99B1B5] hover:underline">Ver produto</h6>
                                 </td>
                             </tr>
                             <tr>
                                 <td class="indent-3">Pirulito</td>
                                 <td class="text-center">1.00€</td>
                                 <td class="text-center">
-                                    <svg class="cursor-pointer mx-auto h-fit w-fit hover:scale-120 md:hidden  dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="#F47D1B" viewBox="0 0 24 24">
+                                    <svg onclick="mostrarProduto()" class="cursor-pointer mx-auto h-fit w-fit hover:scale-120 md:hidden  dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="#F47D1B" viewBox="0 0 24 24">
                                         <path stroke="currentColor" stroke-width="2" d="M21 12c0 1.2-4.03 6-9 6s-9-4.8-9-6c0-1.2 4.03-6 9-6s9 4.8 9 6Z"/>
                                         <path stroke="currentColor" stroke-width="2" d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"/>
                                     </svg>
         
-                                    <h6 class="cursor-pointer mx-auto w-fit hidden md:block hover:text-[#99B1B5] hover:underline">Ver produto</h6>
+                                    <h6 onclick="mostrarProduto()" class="cursor-pointer mx-auto w-fit hidden md:block hover:text-[#99B1B5] hover:underline">Ver produto</h6>
                                 </td>
                             </tr>
 
@@ -755,108 +764,108 @@
                                 <td class="indent-3">Licor Beirão</td>
                                 <td class="text-center">3.90€</td>
                                 <td class="text-center">
-                                    <svg class="cursor-pointer mx-auto h-fit w-fit hover:scale-120 md:hidden  dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="#F47D1B" viewBox="0 0 24 24">
+                                    <svg onclick="mostrarProduto()" class="cursor-pointer mx-auto h-fit w-fit hover:scale-120 md:hidden  dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="#F47D1B" viewBox="0 0 24 24">
                                         <path stroke="currentColor" stroke-width="2" d="M21 12c0 1.2-4.03 6-9 6s-9-4.8-9-6c0-1.2 4.03-6 9-6s9 4.8 9 6Z"/>
                                         <path stroke="currentColor" stroke-width="2" d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"/>
                                     </svg>
         
-                                    <h6 class="cursor-pointer mx-auto w-fit hidden md:block hover:text-[#99B1B5] hover:underline">Ver produto</h6>
+                                    <h6 onclick="mostrarProduto()" class="cursor-pointer mx-auto w-fit hidden md:block hover:text-[#99B1B5] hover:underline">Ver produto</h6>
                                 </td>
                             </tr>
                             <tr>
                                 <td class="indent-3">Brandymel</td>
                                 <td class="text-center">3.90€</td>
                                 <td class="text-center">
-                                    <svg class="cursor-pointer mx-auto h-fit w-fit hover:scale-120 md:hidden  dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="#F47D1B" viewBox="0 0 24 24">
+                                    <svg onclick="mostrarProduto()" class="cursor-pointer mx-auto h-fit w-fit hover:scale-120 md:hidden  dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="#F47D1B" viewBox="0 0 24 24">
                                         <path stroke="currentColor" stroke-width="2" d="M21 12c0 1.2-4.03 6-9 6s-9-4.8-9-6c0-1.2 4.03-6 9-6s9 4.8 9 6Z"/>
                                         <path stroke="currentColor" stroke-width="2" d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"/>
                                     </svg>
         
-                                    <h6 class="cursor-pointer mx-auto w-fit hidden md:block hover:text-[#99B1B5] hover:underline">Ver produto</h6>
+                                    <h6 onclick="mostrarProduto()" class="cursor-pointer mx-auto w-fit hidden md:block hover:text-[#99B1B5] hover:underline">Ver produto</h6>
                                 </td>
                             </tr>
                             <tr>
                                 <td class="indent-3">Frangélico</td>
                                 <td class="text-center">3.90€</td>
                                 <td class="text-center">
-                                    <svg class="cursor-pointer mx-auto h-fit w-fit hover:scale-120 md:hidden  dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="#F47D1B" viewBox="0 0 24 24">
+                                    <svg onclick="mostrarProduto()" class="cursor-pointer mx-auto h-fit w-fit hover:scale-120 md:hidden  dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="#F47D1B" viewBox="0 0 24 24">
                                         <path stroke="currentColor" stroke-width="2" d="M21 12c0 1.2-4.03 6-9 6s-9-4.8-9-6c0-1.2 4.03-6 9-6s9 4.8 9 6Z"/>
                                         <path stroke="currentColor" stroke-width="2" d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"/>
                                     </svg>
         
-                                    <h6 class="cursor-pointer mx-auto w-fit hidden md:block hover:text-[#99B1B5] hover:underline">Ver produto</h6>
+                                    <h6 onclick="mostrarProduto()" class="cursor-pointer mx-auto w-fit hidden md:block hover:text-[#99B1B5] hover:underline">Ver produto</h6>
                                 </td>
                             </tr>
                             <tr>
                                 <td class="indent-3">Baileys</td>
                                 <td class="text-center">4.00€</td>
                                 <td class="text-center">
-                                    <svg class="cursor-pointer mx-auto h-fit w-fit hover:scale-120 md:hidden  dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="#F47D1B" viewBox="0 0 24 24">
+                                    <svg onclick="mostrarProduto()" class="cursor-pointer mx-auto h-fit w-fit hover:scale-120 md:hidden  dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="#F47D1B" viewBox="0 0 24 24">
                                         <path stroke="currentColor" stroke-width="2" d="M21 12c0 1.2-4.03 6-9 6s-9-4.8-9-6c0-1.2 4.03-6 9-6s9 4.8 9 6Z"/>
                                         <path stroke="currentColor" stroke-width="2" d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"/>
                                     </svg>
         
-                                    <h6 class="cursor-pointer mx-auto w-fit hidden md:block hover:text-[#99B1B5] hover:underline">Ver produto</h6>
+                                    <h6 onclick="mostrarProduto()" class="cursor-pointer mx-auto w-fit hidden md:block hover:text-[#99B1B5] hover:underline">Ver produto</h6>
                                 </td>
                             </tr>
                             <tr>
                                 <td class="indent-3">Drambuie</td>
                                 <td class="text-center">4.00€</td>
                                 <td class="text-center">
-                                    <svg class="cursor-pointer mx-auto h-fit w-fit hover:scale-120 md:hidden  dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="#F47D1B" viewBox="0 0 24 24">
+                                    <svg onclick="mostrarProduto()" class="cursor-pointer mx-auto h-fit w-fit hover:scale-120 md:hidden  dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="#F47D1B" viewBox="0 0 24 24">
                                         <path stroke="currentColor" stroke-width="2" d="M21 12c0 1.2-4.03 6-9 6s-9-4.8-9-6c0-1.2 4.03-6 9-6s9 4.8 9 6Z"/>
                                         <path stroke="currentColor" stroke-width="2" d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"/>
                                     </svg>
         
-                                    <h6 class="cursor-pointer mx-auto w-fit hidden md:block hover:text-[#99B1B5] hover:underline">Ver produto</h6>
+                                    <h6 onclick="mostrarProduto()" class="cursor-pointer mx-auto w-fit hidden md:block hover:text-[#99B1B5] hover:underline">Ver produto</h6>
                                 </td>
                             </tr>
                             <tr>
                                 <td class="indent-3">Grand Marnier</td>
                                 <td class="text-center">4.90€</td>
                                 <td class="text-center">
-                                    <svg class="cursor-pointer mx-auto h-fit w-fit hover:scale-120 md:hidden  dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="#F47D1B" viewBox="0 0 24 24">
+                                    <svg onclick="mostrarProduto()" class="cursor-pointer mx-auto h-fit w-fit hover:scale-120 md:hidden  dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="#F47D1B" viewBox="0 0 24 24">
                                         <path stroke="currentColor" stroke-width="2" d="M21 12c0 1.2-4.03 6-9 6s-9-4.8-9-6c0-1.2 4.03-6 9-6s9 4.8 9 6Z"/>
                                         <path stroke="currentColor" stroke-width="2" d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"/>
                                     </svg>
         
-                                    <h6 class="cursor-pointer mx-auto w-fit hidden md:block hover:text-[#99B1B5] hover:underline">Ver produto</h6>
+                                    <h6 onclick="mostrarProduto()" class="cursor-pointer mx-auto w-fit hidden md:block hover:text-[#99B1B5] hover:underline">Ver produto</h6>
                                 </td>
                             </tr>
                             <tr>
                                 <td class="indent-3">Tijuana</td>
                                 <td class="text-center">3.90€</td>
                                 <td class="text-center">
-                                    <svg class="cursor-pointer mx-auto h-fit w-fit hover:scale-120 md:hidden  dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="#F47D1B" viewBox="0 0 24 24">
+                                    <svg onclick="mostrarProduto()" class="cursor-pointer mx-auto h-fit w-fit hover:scale-120 md:hidden  dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="#F47D1B" viewBox="0 0 24 24">
                                         <path stroke="currentColor" stroke-width="2" d="M21 12c0 1.2-4.03 6-9 6s-9-4.8-9-6c0-1.2 4.03-6 9-6s9 4.8 9 6Z"/>
                                         <path stroke="currentColor" stroke-width="2" d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"/>
                                     </svg>
         
-                                    <h6 class="cursor-pointer mx-auto w-fit hidden md:block hover:text-[#99B1B5] hover:underline">Ver produto</h6>
+                                    <h6 onclick="mostrarProduto()" class="cursor-pointer mx-auto w-fit hidden md:block hover:text-[#99B1B5] hover:underline">Ver produto</h6>
                                 </td>
                             </tr>
                             <tr>
                                 <td class="indent-3">Amarguinha</td>
                                 <td class="text-center">3.90€</td>
                                 <td class="text-center">
-                                    <svg class="cursor-pointer mx-auto h-fit w-fit hover:scale-120 md:hidden  dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="#F47D1B" viewBox="0 0 24 24">
+                                    <svg onclick="mostrarProduto()" class="cursor-pointer mx-auto h-fit w-fit hover:scale-120 md:hidden  dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="#F47D1B" viewBox="0 0 24 24">
                                         <path stroke="currentColor" stroke-width="2" d="M21 12c0 1.2-4.03 6-9 6s-9-4.8-9-6c0-1.2 4.03-6 9-6s9 4.8 9 6Z"/>
                                         <path stroke="currentColor" stroke-width="2" d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"/>
                                     </svg>
         
-                                    <h6 class="cursor-pointer mx-auto w-fit hidden md:block hover:text-[#99B1B5] hover:underline">Ver produto</h6>
+                                    <h6 onclick="mostrarProduto()" class="cursor-pointer mx-auto w-fit hidden md:block hover:text-[#99B1B5] hover:underline">Ver produto</h6>
                                 </td>
                             </tr>
                             <tr>
                                 <td class="indent-3">Moscatel</td>
                                 <td class="text-center">3.50€</td>
                                 <td class="text-center">
-                                    <svg class="cursor-pointer mx-auto h-fit w-fit hover:scale-120 md:hidden  dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="#F47D1B" viewBox="0 0 24 24">
+                                    <svg onclick="mostrarProduto()" class="cursor-pointer mx-auto h-fit w-fit hover:scale-120 md:hidden  dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="#F47D1B" viewBox="0 0 24 24">
                                         <path stroke="currentColor" stroke-width="2" d="M21 12c0 1.2-4.03 6-9 6s-9-4.8-9-6c0-1.2 4.03-6 9-6s9 4.8 9 6Z"/>
                                         <path stroke="currentColor" stroke-width="2" d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"/>
                                     </svg>
         
-                                    <h6 class="cursor-pointer mx-auto w-fit hidden md:block hover:text-[#99B1B5] hover:underline">Ver produto</h6>
+                                    <h6 onclick="mostrarProduto()" class="cursor-pointer mx-auto w-fit hidden md:block hover:text-[#99B1B5] hover:underline">Ver produto</h6>
                                 </td>
                             </tr>
 
@@ -867,59 +876,60 @@
                                 <td class="indent-3">Constantino</td>
                                 <td class="text-center">3.90€</td>
                                 <td class="text-center">
-                                    <svg class="cursor-pointer mx-auto h-fit w-fit hover:scale-120 md:hidden  dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="#F47D1B" viewBox="0 0 24 24">
+                                    <svg onclick="mostrarProduto()" class="cursor-pointer mx-auto h-fit w-fit hover:scale-120 md:hidden  dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="#F47D1B" viewBox="0 0 24 24">
                                         <path stroke="currentColor" stroke-width="2" d="M21 12c0 1.2-4.03 6-9 6s-9-4.8-9-6c0-1.2 4.03-6 9-6s9 4.8 9 6Z"/>
                                         <path stroke="currentColor" stroke-width="2" d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"/>
                                     </svg>
         
-                                    <h6 class="cursor-pointer mx-auto w-fit hidden md:block hover:text-[#99B1B5] hover:underline">Ver produto</h6>
+                                    <h6 onclick="mostrarProduto()" class="cursor-pointer mx-auto w-fit hidden md:block hover:text-[#99B1B5] hover:underline">Ver produto</h6>
                                 </td>
                             </tr>
                             <tr>
                                 <td class="indent-3">Macieira</td>
                                 <td class="text-center">3.90€</td>
                                 <td class="text-center">
-                                    <svg class="cursor-pointer mx-auto h-fit w-fit hover:scale-120 md:hidden  dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="#F47D1B" viewBox="0 0 24 24">
+                                    <svg onclick="mostrarProduto()" class="cursor-pointer mx-auto h-fit w-fit hover:scale-120 md:hidden  dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="#F47D1B" viewBox="0 0 24 24">
                                         <path stroke="currentColor" stroke-width="2" d="M21 12c0 1.2-4.03 6-9 6s-9-4.8-9-6c0-1.2 4.03-6 9-6s9 4.8 9 6Z"/>
                                         <path stroke="currentColor" stroke-width="2" d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"/>
                                     </svg>
         
-                                    <h6 class="cursor-pointer mx-auto w-fit hidden md:block hover:text-[#99B1B5] hover:underline">Ver produto</h6>
+                                    <h6 onclick="mostrarProduto()" class="cursor-pointer mx-auto w-fit hidden md:block hover:text-[#99B1B5] hover:underline">Ver produto</h6>
                                 </td>
                             </tr>
                             <tr>
                                 <td class="indent-3">Croft</td>
                                 <td class="text-center">3.90€</td>
                                 <td class="text-center">
-                                    <svg class="cursor-pointer mx-auto h-fit w-fit hover:scale-120 md:hidden  dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="#F47D1B" viewBox="0 0 24 24">
+                                    <svg onclick="mostrarProduto()" class="cursor-pointer mx-auto h-fit w-fit hover:scale-120 md:hidden  dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="#F47D1B" viewBox="0 0 24 24">
                                         <path stroke="currentColor" stroke-width="2" d="M21 12c0 1.2-4.03 6-9 6s-9-4.8-9-6c0-1.2 4.03-6 9-6s9 4.8 9 6Z"/>
                                         <path stroke="currentColor" stroke-width="2" d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"/>
                                     </svg>
         
-                                    <h6 class="cursor-pointer mx-auto w-fit hidden md:block hover:text-[#99B1B5] hover:underline">Ver produto</h6>
+                                    <h6 onclick="mostrarProduto()" class="cursor-pointer mx-auto w-fit hidden md:block hover:text-[#99B1B5] hover:underline">Ver produto</h6>
                                 </td>
                             </tr>
                             <tr>
                                 <td class="indent-3">Vinho do Porto</td>
                                 <td class="text-center">3.50€</td>
                                 <td class="text-center">
-                                    <svg class="cursor-pointer mx-auto h-fit w-fit hover:scale-120 md:hidden  dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="#F47D1B" viewBox="0 0 24 24">
+                                    <svg onclick="mostrarProduto()" class="cursor-pointer mx-auto h-fit w-fit hover:scale-120 md:hidden  dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="#F47D1B" viewBox="0 0 24 24">
                                         <path stroke="currentColor" stroke-width="2" d="M21 12c0 1.2-4.03 6-9 6s-9-4.8-9-6c0-1.2 4.03-6 9-6s9 4.8 9 6Z"/>
                                         <path stroke="currentColor" stroke-width="2" d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"/>
                                     </svg>
         
-                                    <h6 class="cursor-pointer mx-auto w-fit hidden md:block hover:text-[#99B1B5] hover:underline">Ver produto</h6>
+                                    <h6 onclick="mostrarProduto()" class="cursor-pointer mx-auto w-fit hidden md:block hover:text-[#99B1B5] hover:underline">Ver produto</h6>
                                 </td>
                             </tr>
                         </tbody>
                     </table>
                 </section>
             </div>
+
         </div>
     </main>
 
   <!-- Rodapé -->
-  <footer class="z-99 text-white bg-[#FCCE35] shadow px-10 sticky">
+  <footer class="z-40 text-white bg-[#FCCE35] shadow px-10 sticky">
     <div class="flex flex-col md:flex-row md:gap-3 py-5 max-w-[1280px] mx-auto">
         <form action="https://formsubmit.co/iurimarcianom@hotmail.com" method="POST" class="w-full text-white flex flex-col gap-2" enctype="multipart/form-data">
             <h4 class="!text-white">Envie-nos email</h4>
@@ -987,7 +997,6 @@
 
 <script>
     /* Troca de Menus*/
-
     function trocaMenu(elemento) {
         const menuComida = document.querySelector('#MenuComida');
         const menuBebida = document.querySelector('#MenuBebida');
@@ -1013,6 +1022,20 @@
                 abaBebida.classList.add('selecionado')
                 abaComida.classList.remove('selecionado')
                 break;
+        }
+    }
+
+    /*Mostrar imagem de produto*/
+
+    function mostrarProduto(elemento) {
+        const visualizadorImagem = document.querySelector('#VisualizadorImagem');
+
+        if(visualizadorImagem.classList.contains('hidden')){
+            visualizadorImagem.classList.remove('hidden');
+            document.body.style.overflow = "hidden";
+        } else {
+            visualizadorImagem.classList.add('hidden');
+            document.body.style.overflow = "auto";
         }
     }
 
